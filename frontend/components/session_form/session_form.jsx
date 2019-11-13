@@ -37,10 +37,11 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className="login-form-all">
+          <h2>Todu!</h2>
         <form onSubmit={this.submit} className="login-form-form">
-          Welcome to Todu.
           <br />
-          Please {this.props.formType} or {this.props.webLink}
+          <br/>
+          <div className="session-div">Please {this.props.formType} or <nav className="session-link">{this.props.webLink}</nav></div>
           {this.renderErrors()}
           <div className="login-form">
             <br />
