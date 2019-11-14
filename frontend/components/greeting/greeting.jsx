@@ -5,19 +5,22 @@ const Greeting = (props) => {
   const links = () => (
     <nav className="login-signup">
       <div className="auth-link">
-      <Link to="/login">Login</Link>
+        <Link to="/login">Login</Link>
       </div>
       <div className="auth-link">
-      <Link to="/signup">Sign up</Link>
+        <Link to="/signup">Sign up</Link>
       </div>
     </nav>
   );
-  const greeting = () => (
+  const greeting = () => {
+    const name = props.currentUser.username[0].toUpperCase() + props.currentUser.username.slice(1)
+    return (
     <nav className="greeting-front">
-      <h2 className="logged-in">Hello, {props.currentUser.username}!</h2>
+      <h2 className="logged-in">Hello,  {name}!</h2>
       <button className="greeting-logout" onClick={props.logout}>Log Out</button>
     </nav>
-  );
+    )
+  };
 
   if (props.currentUser) {
     return greeting();

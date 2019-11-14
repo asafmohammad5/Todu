@@ -9,6 +9,11 @@ class SessionForm extends React.Component {
       password: ''
     };
     this.submit = this.submit.bind(this);
+    this.submitDemo = this.submitDemo.bind(this);
+  }
+
+  componentDidMount () {
+    this.props.clearErrors();
   }
 
   update(field) {
@@ -22,17 +27,18 @@ class SessionForm extends React.Component {
     this.props.submitForm(this.state);
   }
 
+  submitDemo () {
+    this.props.demoLogin({username: "demoUser", password: "hunter2"})
+  }
+
   renderErrors() {
+    const arr = this.props.errors.map((error) => <div>{error}</div>)
     return (
       <ul>
-        {this.props.errors.map((error, i) => (
-          <li key={`${i}`}>
-            {error}
-          </li>
-        ))}
+        {arr}
       </ul>
-    );
-  }
+    )
+  };
 
   render() {
     return (
@@ -42,30 +48,36 @@ class SessionForm extends React.Component {
           <br />
           <br/>
           <div className="session-div">Please {this.props.formType} or <nav className="session-link">{this.props.webLink}</nav></div>
-          {this.renderErrors()}
+          <nav className="session-errors">{this.renderErrors()}</nav>
           <div className="login-form">
             <br />
             <label>
-              Username:
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
+                placeholder="Enter username"
                 className="login-input"
               />
             </label>
             <br />
             <label>
-              Password:
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
+                placeholder="Enter password"
                 className="login-input"
               />
             </label>
             <br />
-            <button>{this.props.formType}</button>
+            <button className="session-button">{this.props.formType}</button>
           </div>
+          <p className="session-demo" onClick={this.submitDemo}>Try it now!</p>
         </form>
+        <div className="footer-container">
+          <div className="left-image"></div>
+          <div className="middle-image"></div>
+          <div className="right-image"></div>
+        </div>
       </div>
     );
   }
