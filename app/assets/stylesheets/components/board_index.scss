@@ -1,0 +1,147 @@
+.board-index {
+  display: flex;
+  width: 100vw;
+  height: 100vw;
+  background: image-url("lake.jpg") no-repeat;
+  background-size: 100% 70%;
+}
+
+.board-index div {
+  flex: 25%;
+  height: 90%;
+}
+
+.board-heading {
+  margin-top: 10px;
+  font-size: 27px;
+  margin-bottom: 13px;
+  text-decoration: underline;
+  font-family: 'Rock Salt', cursive;
+}
+
+.board-index-list {
+  width: 50px;
+}
+
+.board-index-item {
+  margin-top: 25px;
+  margin-left: -10px;
+  margin-bottom: 40px;
+  border-style: solid;
+  border-width: 3px;
+  width: 205px;
+  height: 36px;
+  border-radius: 7px;
+  text-align: center;
+  border-color: rgb(244, 247, 248);
+  background-color: rgb(145, 165, 167);
+}
+
+.board-index-item:hover {
+  background-color: rgb(120, 168, 170);
+  padding: 1px;
+}
+
+.board-index-project {
+  font-size: 27px;
+  color: rgb(249, 251, 251);
+  font-family: 'Indie Flower', cursive;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.modal-child {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-form {
+  height: 380px;
+  width: 350px;
+  background-color: aliceblue;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(70, 70, 175);
+}
+
+.close-x {
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   cursor: pointer;
+ }
+
+ .modal-project-name {
+  padding: 10px;
+  width: 75%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(156, 155, 158);
+  font-family: 'Fredoka One', cursive;
+  
+ }
+
+ .modal-form h3 {
+   padding: 20px;
+   font-family: 'Fredoka One', cursive;
+   font-size: 25px;
+   margin-bottom: 50px;
+   color: rgb(26, 26, 224);
+   text-decoration: underline;
+ }
+
+
+ .modal-create-board {
+    width: 140px;
+    height: 28px;
+    background: #5AAC44;
+    padding: 8px 50px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 65px;
+    font-family: sans-serif;
+ }
+
+ .modal-create-board:hover {
+   background: rgb(125, 179, 110);
+}
+
+.board-index-create {
+    display: inline-block;
+    width: 100px;
+    height: 15px;
+    background: #0d9abd;
+    padding: 10px;
+    padding-top: 8px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 0px solid #2597a8;
+    margin-left: 0px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    
+}
+
+.board-index-create:hover {
+  background: rgb(24, 172, 209);
+  border: 2px solid rgb(70, 170, 185);
+}
+
+

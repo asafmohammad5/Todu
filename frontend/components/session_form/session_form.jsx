@@ -24,11 +24,13 @@ class SessionForm extends React.Component {
 
   submit(e) {
     e.preventDefault();
-    this.props.submitForm(this.state);
+    this.props.submitForm(this.state)
+      .then(() => this.props.history.push("/boards"));
   }
 
   submitDemo () {
-    this.props.demoLogin({username: "demoUser", password: "hunter2"})
+    this.props.demoLogin({ username: "demoUser", password: "hunter2" })
+      .then(() => this.props.history.push("/boards"));
   }
 
   renderErrors() {

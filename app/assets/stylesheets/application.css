@@ -12,10 +12,12 @@
  *
  *= require_self
  */
+ @import "base/reset.css";
+
  @import "base/layout.css";
  
  @import "components/main_page.scss";
 
- @import "base/reset.css";
-
  @import "components/session_form.scss";
+
+ @import "components/board_index.scss";

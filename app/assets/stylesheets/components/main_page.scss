@@ -12,9 +12,8 @@
 }
 
 .header {
-  background:rgb(99, 198, 231);
+  background:rgb(111, 214, 218);
   color: rgb(221, 235, 234);
-  /* border-bottom: 1px solid #ccc; */
   width: 100vw;
   height: 51px;
   display: flex;
@@ -33,7 +32,6 @@
 }
 
 div .login-signup {
-  /* border-left: 1px solid #ccc; */
   height: 100%;
   font-size: 19px;
   display: flex;
@@ -41,7 +39,6 @@ div .login-signup {
 }
 
 .greeting-front {
-  /* border-left: 1px solid #ccc; */
   height: 100%;
 }
 
@@ -62,15 +59,21 @@ div .login-signup {
     font-family: sans-serif;
 }
 
+.auth-link:hover {
+  background: rgb(58, 176, 206);
+  padding: 9px 10px;
+}
+
 .greeting-front {
   display: flex;
 }
 
 .logged-in {
-  font-size: 25px;
-  margin-top: 10px;
+  font-size: 29px;
+  margin-top: 6px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 35px;
+  font-family: 'Patrick Hand', cursive;
 }
 
 .greeting-logout {
@@ -91,11 +94,16 @@ div .login-signup {
     font-size: 19px;
 }
 
+.greeting-logout:hover {
+   background: rgb(24, 172, 209);
+   border: 2px solid rgb(70, 170, 185);
+}
+
 .main-page-all {
   display: flex;
   width: 100vw;
-  height: 600px;
-  background-color: rgb(99, 198, 231);
+  height: 640px;
+  background-color: rgb(111, 214, 218);
 }
 
 .main-page-all div {
@@ -111,6 +119,49 @@ div .login-signup {
   position: relative;
   left: 990px;
   top: 33px;
+}
+
+.main-page-middle {
+  position: relative;
+  right: 480px;
+  bottom: -100px;
+}
+
+.main-signup-button {
+  width: 130px;
+  display: inline-block;
+    height: 30px;
+    background: #5AAC44;
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-left: 240px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.main-signup-button:hover {
+  background: rgb(114, 182, 95);
+  padding: 5.5px 0px;
+}
+
+.p1 {
+  font-size: 45px;
+  color: rgb(242, 246, 246);
+  font-weight: bold;
+  margin: 5px;
+  line-height: 55px;
+}
+
+.p2 {
+  font-size: 27px;
+  color: rgb(242, 246, 246);
+  font-weight: bold;
+  margin: 5px;
+  line-height: 55px;
 }
 
 
