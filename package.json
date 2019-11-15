@@ -28,6 +28,10 @@
     "postinstall": "webpack",
     "start": "webpack --watch --mode=development"
   },
+  "engines": {
+    "node": "12.10.0",
+    "npm": "6.11.3"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
