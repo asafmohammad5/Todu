@@ -11,6 +11,13 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def index
+    sleep (1)
+    search_term = params[:searchTerm]
+    @users = User.where('lower(username) like ?', "#{search_term.downcase}%")
+    render :index
+  end
+
   private
 
   def user_params

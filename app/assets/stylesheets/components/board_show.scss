@@ -1,0 +1,20 @@
+.board-show-main {
+  display: flex;
+  width: 100vw;
+  height: 960px
+}
+
+.board-show-side {
+  border-style: solid;
+  border-width: 2px;
+  width: 15%;
+  height: 55vw;
+}
+
+.board-show-lists {
+  background: image-url("bb.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  width: 100vw;
+  height: 55vw;
+}

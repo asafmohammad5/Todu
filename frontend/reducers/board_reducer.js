@@ -11,7 +11,8 @@ const boardReducer = (state = {}, action) => {
     case RECEIVE_ALL_BOARDS:
       return Object.assign({}, action.boards)
     case RECEIVE_BOARD:
-      return Object.assign({}, state, { [action.board.id]: action.board })
+      let board = action.payload.board;
+      return Object.assign({}, state, { [board.id]: board })
     case REMOVE_BOARD:
       let newS = Object.assign({}, state)
       delete newS[action.boardId]

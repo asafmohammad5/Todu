@@ -6,7 +6,8 @@ import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute} from '../util/auth_protected';
 import Heading from "./heading/heading_container"
 import BoardIndex from './board/board_index_container';
-import MainPage from './main_page/main_page_container'
+import MainPage from './main_page/main_page_container';
+import BoardShow from './board/board_show_container'
 
 
 const App = () => (
@@ -17,7 +18,7 @@ const App = () => (
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
       <ProtectedRoute exact path="/boards" component={BoardIndex} />
       <Route exact path="/" component={MainPage} />
-      {/* <ProtectedRoute exact path="/boards/:boardId" component={BoardShow} /> */}
+      <ProtectedRoute exact path="/boards/:boardId" component={BoardShow} />
     </Switch>
     
       

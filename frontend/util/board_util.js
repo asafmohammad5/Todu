@@ -34,3 +34,19 @@ export const deleteBoard = boardId => (
     url: `/api/boards/${boardId}`
   })
 );
+
+export const addMember = (boardId, userId) => (
+  $.ajax({
+    method: 'post',
+    url: `/api/boards/${boardId}/add_member`,
+    data: {userId}
+  })
+);
+
+export const removeMember = (boardId, userId) => (
+  $.ajax({
+    method: 'delete',
+    url: `/api/boards/${boardId}/remove_member`,
+    data: {userId}
+  })
+);

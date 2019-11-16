@@ -19,8 +19,14 @@
   font-family: 'Rock Salt', cursive;
 }
 
+
 .board-index-list {
   width: 50px;
+}
+
+.board-index-list-1 {
+  width: 50px;
+  padding: 0px 20px;
 }
 
 .board-index-item {
@@ -40,6 +46,10 @@
 .board-index-item:hover {
   background-color: rgb(120, 168, 170);
   padding: 1px;
+}
+
+.joined-boards {
+  margin-right: 200px;
 }
 
 .board-index-project {

@@ -6,6 +6,7 @@ class Api::BoardsController < ApplicationController
     @board.owner_id = current_user.id
 
     if @board.save 
+     @user = current_user
      render :show 
     else  
       render json: @board.errors.full_messages, status: 422
@@ -15,11 +16,12 @@ class Api::BoardsController < ApplicationController
 
   def show
     @board = Board.find(params[:id])
+    @users = @board.members
   end
 
 
   def index
-    @boards = current_user.created_boards
+    @boards = current_user.created_boards + current_user.boards
     render :index
   end
 
@@ -39,6 +41,21 @@ class Api::BoardsController < ApplicationController
     @board = Board.find(params[:id])
     @board.destroy
     render :index
+  end
+
+  def add_member 
+    @board = Board.find(params[:id])
+    @user = User.find(params[:userId])
+    
+    if (@board.owner_id != @user.id && !@user.boards.include?(@board))
+      @user.boards << @board  
+    end
+    render :show
+  end
+
+
+  def remove_member
+
   end
 
   private
