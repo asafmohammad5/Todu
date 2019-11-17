@@ -7,10 +7,16 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 demo = User.create(username: "demoUser", password: "hunter2")
-bob = User.create(username: "bob", password: "hunter2")
+asaf = User.create(username: "asaf", password: "hunter2")
+palwasha = User.create(username: "palwasha", password: "hunter2")
+timothy = User.create(username: "timothy", password: "hunter2")
 
 project1 = demo.created_boards.create(project_name: "Project1")
-project2 = bob.created_boards.create(project_name: "Project2")
+project2 = asaf.created_boards.create(project_name: "Project2")
+project3 = palwasha.created_boards.create(project_name: "Project3")
+project4 = timothy.created_boards.create(project_name: "Project4")
 
-demo.boards << project2
-bob.boards << project1
+demo.boards << project3
+asaf.boards << project4
+palwasha.boards << project2
+timothy.boards << project1
