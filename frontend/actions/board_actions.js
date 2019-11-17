@@ -15,9 +15,9 @@ const receiveBoard = payload => ({
   payload
 })
 
-const removeBoard = boardId => ({
+const removeBoard = payload => ({
   type: REMOVE_BOARD,
-  boardId
+  payload
 })
 
 export const addMember = (boardId, userId) => dispatch => (
@@ -45,5 +45,5 @@ export const updateBoard = (board) => dispatch => (
 )
 
 export const deleteBoard = (boardId) => dispatch => (
-  EventAPIUtil.deleteBoard(boardId).then(() => dispatch(removeBoard(boardId)))
+  BoardUtil.deleteBoard(boardId).then((payload) => dispatch(removeBoard(payload)))
 )

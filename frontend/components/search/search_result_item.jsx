@@ -14,7 +14,7 @@ class SearchResultItem extends React.Component {
 
   render () {
     return (
-      <li onClick={this.handleClick}>
+      <li className="search-result-li" onClick={this.handleClick}>
         {this.props.user.username}
       </li>
       )

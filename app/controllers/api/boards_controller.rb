@@ -40,6 +40,8 @@ class Api::BoardsController < ApplicationController
   def destroy
     @board = Board.find(params[:id])
     @board.destroy
+    @boards = current_user.created_boards + current_user.boards
+    @user = current_user
     render :index
   end
 
@@ -55,7 +57,13 @@ class Api::BoardsController < ApplicationController
 
 
   def remove_member
+    @board = Board.find(params[:id])
+    @user = User.find(params[:userId])
 
+   if (@board.owner_id != @user.id)
+      @user.boards.delete(@board)
+   end
+    render :show
   end
 
   private

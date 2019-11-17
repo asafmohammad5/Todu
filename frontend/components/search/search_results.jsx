@@ -26,10 +26,11 @@ class SearchResults extends React.Component {
         boardId={this.props.boardId}
         clearSearchResults={this.props.clearSearchResults}
         clearSearchTerm={this.props.clearSearchTerm}
+        key={user.id}
       />
     })
     return (
-      <ul>
+      <ul className="search-results">
         {usersLi}
       </ul>
     )

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import BoardShow from './board_show';
-import { fetchBoard, removeMember } from '../../actions/board_actions';
+import { fetchBoard, removeMember, deleteBoard } from '../../actions/board_actions';
 import { boardCollaborators } from '../../reducers/selectors'
 
 const msp = (state, ownProps) => {
@@ -19,6 +19,7 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => ({
   fetchBoard: (boardId) => dispatch(fetchBoard(boardId)),
   removeMember: (boardId, userId) => dispatch(removeMember(boardId, userId)),
+  deleteBoard: (boardId) => dispatch(deleteBoard(boardId)),
   openModal: modal => dispatch(openModal(modal))
 })
 

@@ -8,9 +8,11 @@ class Board < ApplicationRecord
 
   has_many :team_memberships,
   foreign_key: :board_id,
-  class_name: :TeamMembership
-
+  class_name: :TeamMembership,
+  dependent: :destroy
+ 
   has_many :members,
   through: :team_memberships,
-  source: :member
+  source: :member,
+  dependent: :destroy
 end

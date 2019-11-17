@@ -11,7 +11,7 @@ class User < ApplicationRecord
   has_many :created_boards,
   foreign_key: :owner_id,
   class_name: :Board
-
+  
   has_many :team_memberships,
   foreign_key: :member_id,
   class_name: :TeamMembership
@@ -19,6 +19,7 @@ class User < ApplicationRecord
   has_many :boards,
   through: :team_memberships,
   source: :board
+  
 
   def self.find_by_creds(username, password)
     user = User.find_by(username: username)

@@ -6,9 +6,11 @@
 
 .board-show-side {
   border-style: solid;
-  border-width: 2px;
-  width: 15%;
+  border-width: 3.5px;
+  border-color: #4c888a;
+  width: 16%;
   height: 55vw;
+  background-color: rgb(211, 238, 234);
 }
 
 .board-show-lists {
@@ -17,4 +19,98 @@
   position: relative;
   width: 100vw;
   height: 55vw;
+}
+
+.collaborators {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bold;
+  color: rgb(6, 67, 102);
+}
+
+.search-input {
+  margin-left: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #7e8485;
+  margin-bottom: 2px;
+  height: 22px;
+  width: 180px;
+  font-family: 'Patrick Hand', cursive;
+  border-radius: 3px;
+}
+
+.search-results {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.board-show-members {
+  margin-left: 35px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+  top: 90px;
+  position: relative;
+}
+
+.board-show-members-2 {
+  margin-left: 35px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+  top: 20px;
+  position: relative;
+}
+
+.board-member-delete {
+  margin-left: 20px;
+  font-size: 17px;
+  color: rgb(124, 0, 0);
+}
+
+.board-member-delete:hover {
+  color: rgb(170, 66, 66);
+  text-decoration: underline;
+}
+
+.search-result-li {
+  cursor: pointer;
+  color: rgb(12, 11, 11);
+}
+
+.search-result-li:hover {
+  color: rgb(109, 99, 99);
+}
+
+.board-show-heading {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Rock Salt', cursive;
+  color: #33595a;
+  text-decoration: underline;
+}
+
+.board-button-delete {
+  font-size: 21px;
+  margin-left: 12px;
+  margin-top: 12px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #7e8485;
+  background-color: rgb(214, 132, 132);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-family: sans-serif;
+  color: #941f01;
+  border-color: #8a1c01;
+  font-weight: bold;
+}
+
+.board-button-delete:hover {
+   background-color: rgb(207, 157, 157);
 }

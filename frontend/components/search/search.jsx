@@ -34,6 +34,7 @@ class Search extends React.Component {
     return (
       <div>
         <input
+         className="search-input"
          type="text"
          placeholder="Search user"
          value={this.state.searchTerm}

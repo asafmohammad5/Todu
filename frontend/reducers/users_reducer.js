@@ -1,5 +1,5 @@
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
-import { RECEIVE_BOARD } from '../actions/board_actions'
+import { RECEIVE_BOARD, REMOVE_BOARD } from '../actions/board_actions'
 
 const usersReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -16,6 +16,8 @@ const usersReducer = (state = {}, action) => {
         return Object.assign({}, state, users)
       }
       return state;
+    case REMOVE_BOARD:
+      return Object.assign({}, state, { [action.payload.user.id]: action.payload.user });
     default:
       return state;
   }
