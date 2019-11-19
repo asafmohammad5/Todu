@@ -1,14 +1,15 @@
 .main-div {
-    width: 60%;
+    width: 40%;
   }
 
 .empty-div {
-  width: 20%;
+  width: 30%;
 }
 
 .greet-div {
   display: flex;
-  width: 20%;
+  width: 30%;
+  justify-content: flex-end;
 }
 
 .header {
@@ -54,7 +55,7 @@ div .login-signup {
     color: white;
     font-weight: bold;
     border: 2px solid rgb(37, 151, 168);
-    margin-right: 5px;
+    margin-right: 15px;
     margin-top: 5px;
     font-family: sans-serif;
 }
@@ -71,8 +72,7 @@ div .login-signup {
 .logged-in {
   font-size: 29px;
   margin-top: 6px;
-  padding-left: 15px;
-  padding-right: 35px;
+  margin-right: 25px;
   font-family: 'Patrick Hand', cursive;
 }
 
@@ -88,15 +88,15 @@ div .login-signup {
     color: white;
     font-weight: bold;
     border: 2px solid rgb(37, 151, 168);
-    margin-left: 5px;
     margin-top: 6px;
     font-family: sans-serif;
     font-size: 19px;
+    margin-right: 40px;
+
 }
 
 .greeting-logout:hover {
    background: rgb(24, 172, 209);
-   border: 3px solid rgb(70, 170, 185);
 }
 
 .main-page-all {
@@ -110,7 +110,6 @@ div .login-signup {
   flex: 25%;
   height: 78%;
 }
-
 
 .main-page-right {
   background: image-url("Collaboration-2.jpg") no-repeat;
@@ -163,6 +162,22 @@ div .login-signup {
   margin: 5px;
   line-height: 55px;
 }
+
+.copyright {
+  position: absolute;
+  top: 132%;
+  left: 43%;
+  font-size: 20px;
+}
+
+.company-name {
+  position: absolute;
+  top: 122%;
+  left: 49%;
+  font-size: 25px;
+  font-family: 'Rock Salt', cursive;
+}
+
 
 
 

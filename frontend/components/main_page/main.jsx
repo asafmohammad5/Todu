@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 const MainPage = ({signedIn}) => {
   if (signedIn) {
-    return <div></div>
+    return <Redirect to="/boards" />
   } else {
     return (
       <div className="main-page-all">
@@ -20,6 +20,10 @@ const MainPage = ({signedIn}) => {
         </div>
         <div className="main-page-left"> 
         </div>
+        <nav>
+          <nav className="company-name">Todu!</nav>
+          <nav className="copyright"> © Copyright 2019. All rights reserved.</nav>
+        </nav>
       </div>
     )
   }

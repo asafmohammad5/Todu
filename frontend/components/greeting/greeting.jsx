@@ -17,7 +17,7 @@ const Greeting = (props) => {
     return (
     <nav className="greeting-front">
       <h2 className="logged-in">Hello,  {name}!</h2>
-      <button className="greeting-logout" onClick={props.logout}>Log Out</button>
+      <button className="greeting-logout" onClick={() => props.logout().then(() => props.ownProps.history.push("/"))}>Log Out</button>
     </nav>
     )
   };

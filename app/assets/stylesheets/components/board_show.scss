@@ -89,10 +89,12 @@
 
 .board-show-heading {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Rock Salt', cursive;
   color: #33595a;
-  text-decoration: underline;
+  text-decoration: underline; 
+  width: 33.3%;
+ 
 }
 
 .board-button-delete {
@@ -114,3 +116,85 @@
 .board-button-delete:hover {
    background-color: rgb(207, 157, 157);
 }
+
+.add-list {
+  font-size: 21px;
+  margin-left: 12px;
+  margin-right: 15px;
+  margin-top: 19px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #7e8485;
+  background-color: rgb(80, 182, 165);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-family: sans-serif;
+  color: #22123f;
+  border-color: #8a1c01;
+  font-weight: bold;
+}
+
+.add-list:hover {
+  background-color: rgb(155, 184, 179);
+}
+
+.board-show-outer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.board-show-form {
+  width: 33.3%;
+}
+.board-show-empty {
+  width: 33.3%;
+}
+
+.board-show-list-input {
+  font-family: 'Patrick Hand', cursive;
+  height: 35px;
+  width: 200px;
+  background-color: rgb(168, 194, 187);
+  border-radius: 4px;
+  padding-left: 5px;  
+  border-color: rgb(36, 34, 34);
+}
+
+.list-index-box {
+  margin-left: 30px;
+  width: 265px;
+  height: 120px;
+  background-color: rgb(211, 223, 220);
+  border-radius: 5px;
+}
+
+.list-index-item {
+  font-size: 33px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.list-index-list {
+  display: flex;
+  justify-content: left;
+}
+
+.list-index-button {
+  margin-left: 32px;
+  justify-content: right;
+  margin-bottom: 5px;
+  color: rgb(187, 5, 5);
+  font-weight: bold;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 15px;
+}
+
+.list-index-button:hover  {
+  color: rgb(167, 121, 121);
+  text-decoration: underline;
+}
+
+
+
+

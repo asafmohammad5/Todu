@@ -15,7 +15,7 @@ class Api::BoardsController < ApplicationController
 
 
   def show
-    @board = Board.find(params[:id])
+    @board = Board.includes(:lists).find(params[:id])
     @users = @board.members
   end
 

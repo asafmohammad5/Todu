@@ -28,4 +28,14 @@ export const boardCollaborators = (state, board) => {
   return users;
 }
 
+export const boardLists = (state, board) => {
+  let lists = [];
+  if (board && board.listIds) {
+    board.listIds.forEach(id => {
+      lists.push(state.entities.lists[id])
+    })
+  }
+  return lists;
+}
+
 

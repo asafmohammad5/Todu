@@ -19,7 +19,6 @@ const msp = state => {
 
 const mdp = dispatch => ({
   fetchBoards: () => dispatch(fetchBoards()),
-  createBoard: (board) => dispatch(createBoard(board)),
   openModal: modal => dispatch(openModal(modal))
 })
 

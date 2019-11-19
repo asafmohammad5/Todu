@@ -19,8 +19,8 @@ class User < ApplicationRecord
   has_many :boards,
   through: :team_memberships,
   source: :board
-  
 
+  
   def self.find_by_creds(username, password)
     user = User.find_by(username: username)
     return user if user && user.is_password?(password)

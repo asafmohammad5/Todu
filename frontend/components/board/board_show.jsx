@@ -1,16 +1,38 @@
 import React from 'react';
 import Search from '../search/search_container';
 import {Redirect} from 'react-router-dom';
+import ListIndex from '../list/list_index_container';
 
 class BoardShow extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {loading: true}
+    this.state = {
+      loading: true,
+      listName: ""
+    }
+    this.submit = this.submit.bind(this);
   }
 
   componentDidMount () {
     this.props.fetchBoard(this.props.match.params.boardId).then(() => this.setState({loading: false}))
+  }
+
+  update(field) {
+    return e => this.setState({
+      [field]: e.currentTarget.value
+    });
+  }
+
+  clearState () {
+    this.setState({listName: ""})
+  }
+
+  submit(e) {
+    e.preventDefault();
+    let boardId = this.props.board.id;
+    let list = {list_name: this.state.listName, board_id: boardId}
+    this.props.createList(boardId, list).then(this.clearState())
   }
 
   deleteOwnBoard (boardId) {
@@ -45,7 +67,26 @@ class BoardShow extends React.Component {
 
            <div className="board-show-lists">
               <button className="board-button-delete" onClick={() => this.deleteOwnBoard(this.props.match.params.boardId)}>Delete board</button>
-              <h2 className="board-show-heading">{this.props.board.project_name}</h2>
+              <div className="board-show-outer">
+                <div className="board-show-form">
+                  <form onSubmit={this.submit}>
+                    <button className="add-list">Add list</button>
+                    <input 
+                    className="board-show-list-input"
+                    type="text" 
+                    value={this.state.listName}
+                    onChange={this.update('listName')}
+                    placeholder="Enter list name"
+                    />
+                  </form>
+              </div>
+
+                <h2 className="board-show-heading">{this.props.board.project_name}</h2>
+                <div className="board-show-empty"></div>
+            </div>
+               <ul>
+                 <ListIndex boardId={this.props.match.params.boardId} />
+               </ul>
            </div>
 
         </div>
@@ -66,10 +107,19 @@ class BoardShow extends React.Component {
             onClick={() => this.props.removeMember(this.props.match.params.boardId, this.props.state.session.id)
             .then(() => this.props.history.push('/boards'))}>Leave board</button>
             
-            <h2 className="board-show-heading">{this.props.board.project_name}</h2>
-          </div>
+            <div className="board-show-outer">
+              <div className="board-show-form">
 
-        </div>
+              </div>
+
+              <h2 className="board-show-heading">{this.props.board.project_name}</h2>
+              <div className="board-show-empty"></div>
+            </div>
+            <ul>
+              <ListIndex boardId={this.props.match.params.boardId} />
+            </ul>
+          </div>
+          </div>
       )
     }
   }

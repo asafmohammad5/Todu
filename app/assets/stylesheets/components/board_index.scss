@@ -8,7 +8,7 @@
 
 .board-index div {
   flex: 25%;
-  height: 90%;
+  height: 100vw;
 }
 
 .board-heading {
@@ -19,9 +19,8 @@
   font-family: 'Rock Salt', cursive;
 }
 
-
 .board-index-list {
-  width: 50px;
+  width: 50px; 
 }
 
 .board-index-list-1 {
@@ -76,6 +75,8 @@
 }
 
 .modal-form {
+  display: flex;
+  flex-direction: column;
   height: 380px;
   width: 350px;
   background-color: aliceblue;
@@ -99,14 +100,13 @@
   border-width: 3px;
   border-color: rgb(156, 155, 158);
   font-family: 'Fredoka One', cursive;
-  
  }
 
  .modal-form h3 {
    padding: 20px;
    font-family: 'Fredoka One', cursive;
    font-size: 25px;
-   margin-bottom: 50px;
+   margin-bottom: 20px;
    color: rgb(26, 26, 224);
    text-decoration: underline;
  }
@@ -153,5 +153,12 @@
   background: rgb(24, 172, 209);
   border: 1px solid rgb(70, 170, 185);
 }
+
+.session-errors-1 {
+   font-size: 20px;
+   color: crimson;
+   height: 25px;
+   margin-bottom: 25px;
+ }
 
 

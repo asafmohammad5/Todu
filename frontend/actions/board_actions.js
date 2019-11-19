@@ -1,9 +1,11 @@
 import * as BoardUtil from '../util/board_util';
 
 
-export const RECEIVE_ALL_BOARDS = 'RECEIVE_ALL_BOARDS'
-export const RECEIVE_BOARD = 'RECEIVE_BOARD'
-export const REMOVE_BOARD = 'REMOVE_BOARD'
+export const RECEIVE_ALL_BOARDS = 'RECEIVE_ALL_BOARDS';
+export const RECEIVE_BOARD = 'RECEIVE_BOARD';
+export const REMOVE_BOARD = 'REMOVE_BOARD';
+export const RECEIVE_BOARD_ERRORS = 'RECEIVE_BOARD_ERRORS';
+export const CLEAR_BOARD_ERRORS = 'CLEAR_BOARD_ERRORS';
 
 const receiveAllBoards = boards => ({
   type: RECEIVE_ALL_BOARDS,
@@ -18,6 +20,15 @@ const receiveBoard = payload => ({
 const removeBoard = payload => ({
   type: REMOVE_BOARD,
   payload
+})
+
+const receiveErrors = (errors) => ({
+  type: RECEIVE_BOARD_ERRORS,
+  errors
+});
+
+export const clearErrors = () => ({
+  type: CLEAR_BOARD_ERRORS
 })
 
 export const addMember = (boardId, userId) => dispatch => (
@@ -37,7 +48,9 @@ export const fetchBoard = (boardId) => dispatch => (
 )
 
 export const createBoard = (board) => dispatch => (
-  BoardUtil.createBoard(board).then(payload => dispatch(receiveBoard(payload)))
+  BoardUtil.createBoard(board).then(payload => (dispatch(receiveBoard(payload))),
+  errors => (dispatch(receiveErrors(errors.responseJSON))
+  ))
 )
 
 export const updateBoard = (board) => dispatch => (

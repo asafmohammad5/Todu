@@ -6,7 +6,8 @@ import Greeting from './greeting';
 const msp = (state, ownProps) => {
   return {
     currentUser: state.entities.users[state.session.id],
-    path: ownProps.location.pathname
+    path: ownProps.location.pathname,
+    ownProps
   }
 };
 
