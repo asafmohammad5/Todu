@@ -16,7 +16,7 @@
   background:rgb(111, 214, 218);
   color: rgb(221, 235, 234);
   width: 100vw;
-  height: 51px;
+  height: 5vh;
   display: flex;
   justify-content: space-evenly;
 }
@@ -102,7 +102,7 @@ div .login-signup {
 .main-page-all {
   display: flex;
   width: 100vw;
-  height: 640px;
+  height: 63vh;
   background-color: rgb(111, 214, 218);
 }
 
@@ -165,14 +165,14 @@ div .login-signup {
 
 .copyright {
   position: absolute;
-  top: 132%;
+  top: 91%;
   left: 43%;
   font-size: 20px;
 }
 
 .company-name {
   position: absolute;
-  top: 122%;
+  top: 82%;
   left: 49%;
   font-size: 25px;
   font-family: 'Rock Salt', cursive;

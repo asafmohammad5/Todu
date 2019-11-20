@@ -2,9 +2,11 @@ import Modal from './modal'
 import { connect } from 'react-redux';
 import { closeModal } from '../../actions/modal_actions';
 
-const msp = state => {
+const msp = (state, ownProps) => {
   return {
-    modal: state.ui.modal
+    modal: state.ui.modal,
+    boardId: ownProps.boardId,
+    listId: ownProps.listId
   };
 };
 

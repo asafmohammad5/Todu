@@ -1,14 +1,18 @@
+.div {
+  width: 100vw;
+  height: 100vh;
+}
+
 .board-index {
   display: flex;
   width: 100vw;
-  height: 100vw;
+  height: 95vh;
   background: image-url("lake.jpg") no-repeat;
-  background-size: 100% 70%;
+  background-size: 100% 100%;
 }
 
 .board-index div {
   flex: 25%;
-  height: 100vw;
 }
 
 .board-heading {
@@ -60,7 +64,7 @@
 .modal-background {
   position: fixed;
   top: 0;
-  bottom: 0;
+  bottom: 0;  
   right: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
@@ -69,7 +73,7 @@
 
 .modal-child {
   position: absolute;
-  top: 60%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -161,4 +165,7 @@
    margin-bottom: 25px;
  }
 
+ .board-index-link {
+   height: 36px;
+ }
 

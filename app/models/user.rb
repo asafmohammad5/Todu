@@ -20,6 +20,14 @@ class User < ApplicationRecord
   through: :team_memberships,
   source: :board
 
+  has_many :subteam_memberships,
+  foreign_key: :user_id,
+  class_name: :SubteamMembership
+
+  has_many :cards,
+  through: :subteam_membership,
+  source: :card
+
   
   def self.find_by_creds(username, password)
     user = User.find_by(username: username)

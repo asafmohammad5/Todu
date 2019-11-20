@@ -1,7 +1,7 @@
 json.lists do
   @lists.each do |list|
     json.set! list.id do
-      json.extract! list, :id, :list_name, :board_id
+      json.partial! "api/lists/list", list: list
     end
   end
 end

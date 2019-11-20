@@ -5,27 +5,32 @@
     background:rgb(111, 214, 218);
     font-weight: bold;
     font-size: 35px;
-    height: 68px;
+    height: 7vh;
     position: relative;
     top: -17px;
     font-family: 'Rock Salt', cursive;
-    border-bottom: 1px solid #ccc;
   }
+
+.main-h2 {
+  position: relative;
+  left: -.4%;
+}
  
 .login-form-all {
   text-align: center;
   display: block;
-  background: #F9FAFC;;
+  background: #F9FAFC;
 }
 
 .login-form-form {
-  display: inline-block;
-  width: 450px;
-  height: 480px;
-  font-size: 25px;
-  margin-top: 15px; 
-  box-shadow: rgba(0,0,0,0.1) 0 0 10px;
-  padding: 25px 40px;
+    display: inline-block;
+    width: 22vw;
+    height: 46vh;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    padding: 0px 10px;
+    margin-bottom: 7px;
+    padding-top: 10px;
 }
 
 .login-form {
@@ -67,7 +72,7 @@
     color: white;
     font-weight: bold;
     margin-right: 5px;
-    margin-top: 25px;
+    margin-top: 30px;
     font-family: sans-serif;
  }
 
@@ -86,7 +91,7 @@
 }
 
 .session-demo {
-  margin-top: 20px;
+  margin-top: 30px;
   color: rgb(47, 47, 236);
   font-family: sans-serif;
 }
@@ -99,33 +104,33 @@
 .footer-container {
   display: flex;
   width: 100vw;
-  height: 500px;
+  height: 45.3vh;
 }
 
 .footer-container div {
   flex: 25%;
-  height: 90%;
+  height: 100%;
 }
 
 .left-image {
   background: image-url("images.png") no-repeat;
-  background-size: 100% 85%;
+  background-size: 100% 100%;
   border-radius: 35px;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 
 .right-image {
   background: image-url("images.jpeg") no-repeat;
-  background-size: 100% 85%;
+  background-size: 100% 100%;
   border-radius: 35px;
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 .middle-image {
    background: image-url("download.png") no-repeat;
-   background-size: 100% 90%;
-   border-radius: 335px;
-   margin-top: 3px;
+   background-size: 100% 100%;
+   border-radius: 275px;
+   background-position: bottom;
 }
 
 

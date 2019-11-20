@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_17_204135) do
+ActiveRecord::Schema.define(version: 2019_11_19_205552) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,23 @@ ActiveRecord::Schema.define(version: 2019_11_17_204135) do
     t.index ["owner_id"], name: "index_boards_on_owner_id"
     t.index ["project_name", "owner_id"], name: "index_boards_on_project_name_and_owner_id", unique: true
     t.index ["project_name"], name: "index_boards_on_project_name"
+  end
+
+  create_table "cards", force: :cascade do |t|
+    t.string "card_name", null: false
+    t.string "description", null: false
+    t.datetime "due_date"
+    t.text "comments"
+    t.integer "list_id", null: false
+    t.index ["card_name", "list_id"], name: "index_cards_on_card_name_and_list_id", unique: true
+    t.index ["card_name"], name: "index_cards_on_card_name"
+  end
+
+  create_table "checklists", force: :cascade do |t|
+    t.string "name", null: false
+    t.boolean "checked", default: false
+    t.integer "card_id", null: false
+    t.index ["name"], name: "index_checklists_on_name"
   end
 
   create_table "lists", force: :cascade do |t|

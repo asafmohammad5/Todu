@@ -18,8 +18,8 @@ class BoardIndex extends React.Component {
     if (this.state.loading) {
       return null
     }
-    const createdBoards = this.props.createdBoards.map( (board) => <Link to={`/boards/${board.id}`} key={board.id}> <BoardIndexItem board={board} /> </Link>)
-    const joinedBoards = this.props.joinedBoards.map((board) => <Link to={`/boards/${board.id}`} key={board.id}> <BoardIndexItem board={board} /> </Link>)
+    const createdBoards = this.props.createdBoards.map( (board) => <Link className="board-index-link" to={`/boards/${board.id}`} key={board.id}> <BoardIndexItem board={board} /> </Link>)
+    const joinedBoards = this.props.joinedBoards.map((board) => <Link className="board-index-link" to={`/boards/${board.id}`} key={board.id}> <BoardIndexItem board={board} /> </Link>)
     return (
         <div className="board-index">
 

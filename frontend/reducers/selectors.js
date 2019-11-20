@@ -38,4 +38,14 @@ export const boardLists = (state, board) => {
   return lists;
 }
 
+export const cardLists = (state, list) => {
+  let cards = [];
+  if (list && list.cardIds) {
+    list.cardIds.forEach(id => {
+      cards.push(state.entities.cards[id])
+    })
+  }
+  return cards;
+}
+
 

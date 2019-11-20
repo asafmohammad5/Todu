@@ -8,6 +8,11 @@ import {
   RECEIVE_BOARD
 } from "../actions/board_actions";
 
+import {
+  RECEIVE_CARD,
+  REMOVE_CARD
+} from '../actions/card_actions'
+
 
 const listReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -22,6 +27,12 @@ const listReducer = (state = {}, action) => {
       return Object.assign({}, action.payload.lists)
     case RECEIVE_BOARD:
       return Object.assign({}, state, action.payload.lists)
+    case RECEIVE_CARD:
+      let list2 = action.payload.list
+      return Object.assign({}, state, { [list2.id]: list2 })
+    case REMOVE_CARD:
+      let list3 = action.payload.list
+      return Object.assign({}, state, { [list3.id]: list3 })
     default:
       return state;
   }
