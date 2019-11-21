@@ -8,6 +8,10 @@ import {
   RECEIVE_LIST
 } from "../actions/list_actions";
 
+import {
+  RECEIVE_BOARD
+} from "../actions/board_actions";
+
 
 const cardReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -19,8 +23,12 @@ const cardReducer = (state = {}, action) => {
       let card = action.payload.card;
       return Object.assign({}, state, { [card.id]: card })
     case REMOVE_CARD:
-      return Object.assign({}, action.payload.cards)
+      let newState = Object.assign({}, state)
+      delete newState[action.cardId]
+      return newState
     case RECEIVE_LIST:
+      return Object.assign({}, state, action.payload.cards)
+    case RECEIVE_BOARD:
       return Object.assign({}, state, action.payload.cards)
     default:
       return state;

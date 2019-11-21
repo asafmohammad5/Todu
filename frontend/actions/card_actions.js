@@ -15,9 +15,9 @@ const receiveCard = payload => ({
   payload
 })
 
-const removeCard = payload => ({
+const removeCard = (payload, cardId) => ({
   type: REMOVE_CARD,
-  payload
+  payload, cardId
 })
 
 
@@ -38,5 +38,13 @@ export const updateCard = (boardId, listId, card) => dispatch => (
 )
 
 export const deleteCard = (boardId, listId, cardId) => dispatch => (
-  CardUtil.deleteCard(boardId, listId, cardId).then(payload => dispatch(removeCard(payload)))
+  CardUtil.deleteCard(boardId, listId, cardId).then(payload => dispatch(removeCard(payload, cardId)))
+)
+
+export const addMember = (boardId, listId, cardId, userId) => dispatch => (
+  CardUtil.addMember(boardId, listId, cardId, userId).then(payload => dispatch(receiveCard(payload)))
+)
+
+export const removeMember = (boardId, listId, cardId, userId)=> dispatch => (
+  CardUtil.removeMember(boardId, listId, cardId, userId).then((payload) => dispatch(receiveCard(payload)))
 )

@@ -25,7 +25,7 @@ class User < ApplicationRecord
   class_name: :SubteamMembership
 
   has_many :cards,
-  through: :subteam_membership,
+  through: :subteam_memberships,
   source: :card
 
   

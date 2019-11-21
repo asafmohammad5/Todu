@@ -31,5 +31,4 @@ const Greeting = (props) => {
   }
 };
 
-
 export default Greeting;

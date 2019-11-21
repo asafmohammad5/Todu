@@ -1,9 +1,19 @@
 import React from 'react';
 import CardIndex from '../card/card_index_container';
-import Modal from '../board/modal_container';
+
 
 class ListIndex extends React.Component {
+  constructor(props) {
+    super(props)
+  
+    this.openModal = this.openModal.bind(this)
+  }
 
+  openModal (boardId, listId) {
+    return e => {
+    this.props.openModal({modal: 'card-create', boardId: boardId, listId: listId})
+    }
+  }
   
   render () {
     if (!this.props.lists) {
@@ -18,11 +28,12 @@ class ListIndex extends React.Component {
             <ul>
               <CardIndex boardId={this.props.boardId} listId={list.id} />
             </ul>
-            <button className="card-index-create" onClick={() => this.props.openModal('card-create')}>Add card</button>
-            <Modal boardId={this.props.boardId} listId={list.id} />
+          <button className="card-index-create" onClick={this.openModal(this.props.boardId, list.id)}>Add card...</button>
           </div> 
-      </div>)
+      </div>
+      )
 
+  
     const board_lists1 = this.props.lists.map(list =>
       <div key={list.id}>
         <div className="list-index-box">
@@ -36,7 +47,7 @@ class ListIndex extends React.Component {
     if (this.props.board.owner_id === this.props.user.id ) {
       return (
         <div className="list-index-list">
-          {board_lists}  
+          {board_lists} 
         </div>  
       ) 
      } else {

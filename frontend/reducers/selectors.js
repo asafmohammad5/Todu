@@ -28,6 +28,16 @@ export const boardCollaborators = (state, board) => {
   return users;
 }
 
+export const cardCollaborators = (state, card) => {
+  let users = [];
+  if (card && card.memberIds) {
+    card.memberIds.forEach(id => {
+      users.push(state.entities.users[id])
+    })
+  }
+  return users;
+}
+
 export const boardLists = (state, board) => {
   let lists = [];
   if (board && board.listIds) {

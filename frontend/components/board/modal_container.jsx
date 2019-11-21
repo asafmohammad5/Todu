@@ -4,9 +4,10 @@ import { closeModal } from '../../actions/modal_actions';
 
 const msp = (state, ownProps) => {
   return {
-    modal: state.ui.modal,
-    boardId: ownProps.boardId,
-    listId: ownProps.listId
+    modal: state.ui.modal.modalType,
+    boardId: state.ui.modal.boardId,
+    listId: state.ui.modal.listId,
+    cardId: state.ui.modal.cardId
   };
 };
 

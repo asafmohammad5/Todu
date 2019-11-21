@@ -4,7 +4,12 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :boards, only: [:show, :create, :destroy, :index, :update] do 
       resources :lists, only: [:show, :create, :destroy, :index, :update] do 
-        resources :cards, only: [:show, :create, :destroy, :index, :update]
+        resources :cards, only: [:show, :create, :destroy, :index, :update] do
+          member do 
+            post :add_member
+            delete :remove_member
+          end
+        end
       end
       member do 
         post :add_member

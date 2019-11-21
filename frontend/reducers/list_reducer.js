@@ -28,8 +28,12 @@ const listReducer = (state = {}, action) => {
     case RECEIVE_BOARD:
       return Object.assign({}, state, action.payload.lists)
     case RECEIVE_CARD:
-      let list2 = action.payload.list
-      return Object.assign({}, state, { [list2.id]: list2 })
+      if (action.payload.list) {
+        let list2 = action.payload.list
+        return Object.assign({}, state, { [list2.id]: list2 })
+      } else {
+        return state;
+      }
     case REMOVE_CARD:
       let list3 = action.payload.list
       return Object.assign({}, state, { [list3.id]: list3 })

@@ -20,4 +20,8 @@ class Board < ApplicationRecord
   through: :team_memberships,
   source: :member,
   dependent: :destroy
+
+  has_many :cards,
+  through: :lists,
+  source: :cards
 end

@@ -162,8 +162,8 @@
 
 .list-index-box {
   margin-left: 30px;
-  width: 265px;
-  height: 120px;
+  width: 285px;
+  height: auto;
   background-color: rgb(211, 223, 220);
   border-radius: 5px;
 }
@@ -193,6 +193,301 @@
 .list-index-button:hover  {
   color: rgb(167, 121, 121);
   text-decoration: underline;
+}
+
+.modal-form-card {
+  height: 80vh;
+  width: 40vw;
+  background-color: rgb(244, 247, 248);
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(70, 171, 175);
+  border-radius: 10px;
+}
+
+.modal-child-1 {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
+
+.modal-form-card-div {
+  width: 35vw;
+  height: 70vh;
+  position: relative;
+  left: 6%;
+}
+
+.top-level-div {
+  text-align: left;
+  width: 230px;
+}
+
+.modal-form-top-part {
+  display: flex;
+  width: 70vw;
+}
+
+.modal-form-card h3 {
+   text-align: left;
+   padding-left: 14px;
+   font-family: 'Fredoka One', cursive;
+   font-size: 25px;
+   margin-bottom: 25px;
+   color: rgb(59, 100, 136);
+}
+
+.modal-card-name {
+  display: flex;
+  width: 230px;
+  height: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  font-family: 'Patrick Hand', cursive;
+  background-color: white;
+}
+
+.modal-card-name-input {
+  display: block;
+  width: 100%;
+}
+
+.members-label {
+  text-align: left; 
+}
+
+.members-head {
+  font-size: 20px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+  color: rgb(71, 32, 109);
+}
+
+.members {
+  display: block;
+  margin-top: 1%;
+}
+
+.members-label {
+  margin-top: 1.5%;
+}
+
+.due-date-label {
+  display: block;
+  margin-left: 15%;
+  width: 30%;
+  margin-top: 1%;
+}
+
+.due-date {
+  margin-top: 1%;
+  font-size: 20px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+}
+
+.modal-card-duedate {
+  width: 150px;
+  display: block;
+}
+
+.description {
+  display: block;
+}
+
+.description-1 {
+  margin-top: 4%;
+  display: block;
+  text-align: left;
+  font-size: 23px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+}
+
+.modal-card-description {
+  display: block;
+  text-align: left;
+  margin-top: 2.5%;
+  font-family: 'Patrick Hand', cursive;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  height: 30px;
+  width: 330px;
+  padding-left: 5px;
+  background-color: white;
+}
+
+.comments {
+  display: block;
+  text-align: left;
+  margin-top: 5%;
+}
+
+.comment {
+  display: block;
+  text-align: left;
+  font-size: 23px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+}
+
+.textarea-create {
+  margin-top: 5%;
+  height: 20vh;
+  width: 100%;
+  background-color: white;
+  font-family: 'Patrick Hand', cursive; 
+  padding-left: 5px;
+}
+
+.modal-create-card {
+  width: 140px;
+    height: 28px;
+    background: #5AAC44;
+    padding: 8px 50px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 15%;
+    font-family: sans-serif;
+}
+
+.modal-create-card:hover {
+   background: rgb(143, 180, 133);
+}
+
+.card-index-create {
+   width: 60%;
+   display: flex;
+    height: 30px;
+    text-align: center; 
+    border-radius: 8px;
+    color: rgb(146, 143, 143);
+    font-weight: bold;
+    margin-right: 5px;
+    font-family: sans-serif;
+    margin-left: 3%;
+}
+
+.card-index-create:hover {
+   color: rgb(107, 103, 103);
+}
+
+.delete-card {
+  margin-left: 5%;
+  justify-content: right;
+  color: rgb(187, 5, 5);
+  font-weight: bold;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 15px;
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 1%;
+}
+
+.delete-card:hover {
+  color: rgb(167, 121, 121);
+  text-decoration: underline;
+}
+
+.modal-card-description-1 {
+  display: block;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 2.5%;
+  font-family: 'Patrick Hand', cursive;
+  height: 30px;
+  width: 330px;
+  padding-left: 5px;
+}
+
+.top-level-div-1 {
+  display: flex;
+  width: 230px;
+} 
+
+.due-date-1 {
+  margin-top: 1%;
+  font-size: 20px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+  width: 90%;
+  margin-left: 50%;
+}
+
+.due-date-label-1 {
+  display: block;
+  margin-left: 15%;
+  width: 90%;
+  margin-top: 1%;
+}
+
+.members-head-1 {
+  font-size: 20px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+  color: rgb(71, 32, 109);
+  margin-top: 1%;
+}
+
+.description-2 {
+  margin-top: 6%;
+  display: block;
+  text-align: left;
+  font-size: 23px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+}
+
+
+.edit-card-button {
+   width: 220px;
+    height: 38px;
+    background: rgb(207, 204, 200);
+    text-align: left;
+    border-radius: 5px;
+    padding-left: 3%;
+    color: rgb(61, 59, 59);
+    font-weight: bold;
+    margin-left: 2%;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.edit-card-button:hover {
+  background: rgb(184, 180, 177);
+}
+
+.join-card {
+    margin-left: 3%;
+    margin-bottom: 5px;
+    color: #bb0505;
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 15px;
+}
+
+.join-card:hover {
+  color: #b14b4b;
+  text-decoration: underline;
+}
+
+.card-users {
+  display: flex;
+}
+
+.card-user {
+  font-size: 15px;
+  font-family: 'Patrick Hand', cursive;
+  margin-left: 1%;
 }
 
 

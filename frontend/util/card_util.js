@@ -34,3 +34,19 @@ export const deleteCard = (boardId, listId, cardId) => (
     url: `/api/boards/${boardId}/lists/${listId}/cards/${cardId}`
   })
 );
+
+export const addMember = (boardId, listId, cardId, userId) => (
+  $.ajax({
+    method: 'post',
+    url: `/api/boards/${boardId}/lists/${listId}/cards/${cardId}/add_member`,
+    data: { userId }
+  })
+);
+
+export const removeMember = (boardId, listId, cardId, userId) => (
+  $.ajax({
+    method: 'delete',
+    url: `/api/boards/${boardId}/lists/${listId}/cards/${cardId}/remove_member`,
+    data: { userId }
+  })
+);
