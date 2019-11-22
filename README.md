@@ -51,7 +51,15 @@ Finally, the boards controller sends back only the boards that the user has crea
  end
 ```
 
-The project was built using Rails and Postgres for backend, while React/Redux was used for frontend.
+This project was designed and built in under two weeks.
+
+## Technologies implemented
+* Rails
+* Javascript
+* React/Redux
+* Postgres
+* CSS/SCSS
+* HTML
 
 ## Features
 
