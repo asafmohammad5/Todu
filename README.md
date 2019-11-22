@@ -14,6 +14,7 @@ The core purpose of this app is to give users a tool to organize multiple projec
 
 This type of permission level and layout is what seperates Todu! from other apps.
 
+![GitHub Logo](/app/assets/images/Todu-boards.png)
 
 The project was built using Rails and Postgres for backend, while React/Redux was used for frontend.
 
