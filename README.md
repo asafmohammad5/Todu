@@ -30,13 +30,17 @@ For created boards the corresponding table would resemble this:
 
 The User model has two associations that fetch the created or joined boards when called.
 
-`has_many :created_boards,
-  foreign_key: :owner_id,
-  class_name: :Board`
+```
+has_many :created_boards,
+foreign_key: :owner_id,
+class_name: :Board
+```
   
-  `has_many :boards,
-  through: :team_memberships,
-  source: :board`
+````
+has_many :boards,
+through: :team_memberships,
+source: :board
+````
   
 Finally, the boards controller sends back only the boards that the user has created or is a member of.
  
