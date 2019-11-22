@@ -8,25 +8,12 @@ The project was built using Rails and Postgres for backend, while React/Redux wa
 
 ## Features
 
+* Authentication using BCrypt
+* Users can create boards
+* Users can search for other users to add to their project
+* The main page shows all of the users created projects as well as joined projects
+* Users can add lists to each individual created project
+* Users can add cards to those list s
+* Users can fully edit their projects cards while having restrictions on joined projects
+* Users can remove other users they added on created projects
 
-
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
