@@ -16,6 +16,9 @@ This type of permission level and layout is what seperates Todu! from other apps
 
 ![GitHub Logo](/app/assets/images/Todu-boards.png)
 
+The permission level was accomplished using a `team_membership` table. Each row in the table stores a `user_id` as well as the corresponding `board_id`. It would look something like this:
+
+
 The project was built using Rails and Postgres for backend, while React/Redux was used for frontend.
 
 ## Features
