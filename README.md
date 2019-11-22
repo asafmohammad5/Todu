@@ -16,7 +16,7 @@ This type of permission level and layout is what seperates Todu! from other apps
 
 ![GitHub Logo](/app/assets/images/Todu-boards.png)
 
-The permission level was accomplished using a `team_membership` table for joined boards and `boards` table for created boards. For joined boards the corresponding table stores a `member_id` as well as the `board_id`. It would look something like this:
+The permission level was accomplished using a `team_membership` join table for joined boards and `boards` table for created boards. For joined boards the corresponding table stores a `member_id` as well as the `board_id`. It would look something like this:
 
 | `id` |  `member_id` |  `board_id` |
 |--:|---|---|
