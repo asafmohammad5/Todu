@@ -16,8 +16,36 @@ This type of permission level and layout is what seperates Todu! from other apps
 
 ![GitHub Logo](/app/assets/images/Todu-boards.png)
 
-The permission level was accomplished using a `team_membership` table. Each row in the table stores a `user_id` as well as the corresponding `board_id`. It would look something like this:
+The permission level was accomplished using a `team_membership` table for joined boards and `boards` table for created boards. For joined boards the corresponding table stores a `member_id` as well as the `board_id`. It would look something like this:
 
+| `id` |  `member_id` |  `board_id` |
+|--:|---|---|
+| `4 `| `17` | `3`  |
+
+For created boards the corresponding table would resemble this:
+
+| `id` | `project_name` | `owner_id` |`created_at` | `updated_at`|
+|--:|---|---|---|---|
+| `3`| `board test` | `7`  |`2019-11-19 10:00:26` | `2019-11-21 11:47:11`|
+
+The User model has two associations that fetch the created or joined boards when called.
+
+`has_many :created_boards,
+  foreign_key: :owner_id,
+  class_name: :Board`
+  
+  `has_many :boards,
+  through: :team_memberships,
+  source: :board`
+  
+Finally, the boards controller sends back only the boards that the user has created or is a member of.
+ 
+ ``` 
+ def index
+    @boards = current_user.created_boards + current_user.boards
+    render :index
+ end
+```
 
 The project was built using Rails and Postgres for backend, while React/Redux was used for frontend.
 
@@ -31,4 +59,6 @@ The project was built using Rails and Postgres for backend, while React/Redux wa
 * Users can add cards to those list s
 * Users can fully edit their projects cards while having restrictions on joined projects
 * Users can remove other users they added on created projects
+
+
 
