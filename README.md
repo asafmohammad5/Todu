@@ -6,6 +6,9 @@ Todu! is a Trello clone with some slight differences. With the Todu! app, you ca
 
 The project was built using Rails and Postgres for backend, while React/Redux was used for frontend.
 
+![GitHub Logo](/app/assets/images/Todu-main.png)
+
+
 ## Features
 
 * Authentication using BCrypt
