@@ -4,7 +4,8 @@ import CreateCard from './create_card_form';
 import { updateCard, fetchCard } from '../../actions/card_actions';
 import { closeModal } from "../../actions/modal_actions";
 import { cardCollaborators } from '../../reducers/selectors';
-
+import { createChecklist } from '../../actions/checklist_actions';
+ 
 class UpdateCard extends React.Component {
   componentDidMount () {
     this.props.fetchCard(this.props.boardId, this.props.listId, this.props.cardId)
@@ -25,6 +26,7 @@ class UpdateCard extends React.Component {
         state={this.props.state}
         board={this.props.board}
         users={this.props.users}
+        createChecklist={this.props.createChecklist}
       />
     )
   }
@@ -51,6 +53,7 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => ({
   action: (boardId, listId, card) => dispatch(updateCard(boardId, listId, card)),
   fetchCard: (boardId, listId, cardId) => dispatch(fetchCard(boardId, listId, cardId)),
+  createChecklist: (boardId, listId, cardId, checklist) => dispatch(createChecklist(boardId, listId, cardId, checklist)),
   closeModal: () => dispatch(closeModal())
 })
 

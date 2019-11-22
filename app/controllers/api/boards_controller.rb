@@ -62,6 +62,10 @@ class Api::BoardsController < ApplicationController
 
    if (@board.owner_id != @user.id)
       @user.boards.delete(@board)
+      @cards = @user.cards
+      @board.cards.each do |card|
+        @user.cards.delete(card) if @cards.include?(card)
+      end
    end
     render :show
   end

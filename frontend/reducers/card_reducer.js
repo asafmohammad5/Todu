@@ -12,6 +12,10 @@ import {
   RECEIVE_BOARD
 } from "../actions/board_actions";
 
+import {
+  RECEIVE_CHECKLIST
+} from '../actions/checklist_actions'
+
 
 const cardReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -30,6 +34,8 @@ const cardReducer = (state = {}, action) => {
       return Object.assign({}, state, action.payload.cards)
     case RECEIVE_BOARD:
       return Object.assign({}, state, action.payload.cards)
+    case RECEIVE_CHECKLIST:
+      return Object.assign({}, state, action.payload.card)
     default:
       return state;
   }

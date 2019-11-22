@@ -5,7 +5,7 @@ end
 json.checklist do 
   @card.checklists do |checklist|
     json.set! checklist.id do
-      json.extract! checklist, :id, :name, card_id, :checked
+      json.partial! "api/checklists/checklist", checklist: checklist
     end
   end
 end

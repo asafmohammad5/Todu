@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :boards, only: [:show, :create, :destroy, :index, :update] do 
       resources :lists, only: [:show, :create, :destroy, :index, :update] do 
         resources :cards, only: [:show, :create, :destroy, :index, :update] do
+          resources :checklists, only: [:show, :create, :destroy, :index, :update]
           member do 
             post :add_member
             delete :remove_member
