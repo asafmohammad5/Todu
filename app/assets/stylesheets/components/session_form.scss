@@ -1,36 +1,42 @@
 .login-form-all h2 {
     display: block;
     text-align: center;
-    color: rgb(221, 235, 234);
-    background:rgb(111, 214, 218);
+    color: rgb(111, 214, 218);
     font-weight: bold;
     font-size: 35px;
-    height: 7vh;
+    height: 8.5vh;
     position: relative;
-    top: -17px;
+    top: 0px;
     font-family: 'Rock Salt', cursive;
   }
 
 .main-h2 {
   position: relative;
-  left: -.4%;
+  margin: auto;
+  width: 90px;
+}
+
+.main-h2:hover {
+  cursor: pointer;
 }
  
 .login-form-all {
   text-align: center;
   display: block;
   background: #F9FAFC;
+  height: 100vh;
 }
 
 .login-form-form {
     display: inline-block;
-    width: 22vw;
-    height: 46vh;
+    width: 27vw;
+    height: 49vh;
     font-size: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
     padding: 0px 10px;
     margin-bottom: 7px;
     padding-top: 10px;
+    margin-top: 2%;
 }
 
 .login-form {
@@ -41,10 +47,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  margin-top: -30px;
-  margin-bottom: 30px;
+  font-size: 18px;
+  margin-bottom: 5px;
   font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(95, 93, 93);
 }
 
 .session-link { 
@@ -72,8 +79,9 @@
     color: white;
     font-weight: bold;
     margin-right: 5px;
-    margin-top: 30px;
+    margin-top: 12px;
     font-family: sans-serif;
+    font-size: 20px;
  }
 
 .login-input {
@@ -84,6 +92,8 @@
   height: 50px;
   margin-bottom: 25px;
   padding-top: 0px;
+  font-family: sans-serif;
+  font-size: 19px;
 }
 
 .session-button:hover {
@@ -91,9 +101,15 @@
 }
 
 .session-demo {
-  margin-top: 30px;
+  margin-top: 7%;
   color: rgb(47, 47, 236);
   font-family: sans-serif;
+  font-size: 18px;
+}
+
+.hr {
+  width: 80%;
+  margin-top: 9%;
 }
 
 .session-demo:hover {
@@ -104,7 +120,8 @@
 .footer-container {
   display: flex;
   width: 100vw;
-  height: 45.3vh;
+  height: 30vh;
+  margin-top: 1%;
 }
 
 .footer-container div {
@@ -113,24 +130,17 @@
 }
 
 .left-image {
-  background: image-url("images.png") no-repeat;
-  background-size: 100% 100%;
+  background: image-url("left.jpg") no-repeat;
+  background-size: 90% 100%;
   border-radius: 35px;
-  margin-left: 2px;
+  margin-left: 2%;
+  margin-top: 30px;
 }
 
 .right-image {
-  background: image-url("images.jpeg") no-repeat;
-  background-size: 100% 100%;
+  background: image-url("right.jpg") no-repeat;
+  background-size: 90% 100%;
   border-radius: 35px;
   margin-right: 2px;
 }
-
-.middle-image {
-   background: image-url("download.png") no-repeat;
-   background-size: 100% 100%;
-   border-radius: 275px;
-   background-position: bottom;
-}
-
 

@@ -17,3 +17,6 @@ The project was built using Rails and Postgres for backend, while React/Redux wa
 * Users can fully edit their projects cards while having restrictions on joined projects
 * Users can remove other users they added on created projects
 
+<!-- gEJX3WYf9oHjIwzz -->
+
+<!-- mongodb+srv://Admin:gEJX3WYf9oHjIwzz@cluster0-ytqid.mongodb.net/test?retryWrites=true&w=majority -->

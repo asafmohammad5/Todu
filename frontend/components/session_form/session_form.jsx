@@ -45,11 +45,10 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className="login-form-all">
-          <h2><div className="main-h2">Todu!</div></h2>
+        <h2><div onClick={() => this.props.history.push("/")} className="main-h2">Todu!</div></h2>
         <form onSubmit={this.submit} className="login-form-form">
-          <br />
           <br/>
-          <div className="session-div">Please {this.props.formType} or <nav className="session-link">{this.props.webLink}</nav></div>
+          <div className="session-div">{this.props.formType} or <nav className="session-link">{this.props.webLink}</nav></div>
           <nav className="session-errors">{this.renderErrors()}</nav>
           <div className="login-form">
             <br />
@@ -73,6 +72,7 @@ class SessionForm extends React.Component {
             <br />
             <button className="session-button">{this.props.formType}</button>
           </div>
+          <hr className="hr"></hr>
           <p className="session-demo" onClick={this.submitDemo}>Try it now!</p>
         </form>
         <div className="footer-container">
