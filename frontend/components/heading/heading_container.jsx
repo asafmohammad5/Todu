@@ -4,7 +4,8 @@ import Heading from './heading';
 
 const msp = (state, ownProps) => {
   return {
-    path: ownProps.location.pathname
+    path: ownProps.location.pathname,
+    ownProps
   }
 };
 

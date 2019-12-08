@@ -6,8 +6,9 @@
 .board-index {
   display: flex;
   width: 100vw;
-  height: 95vh;
-  background: image-url("lake.jpg") no-repeat;
+  height: 92vh;
+  background: rgb(111,214,218);
+  background: linear-gradient(180deg, rgba(111,214,218,1) .5%, rgb(188, 219, 221) 21%, rgb(221, 233, 233) 44%, rgb(238, 241, 241) 100%);
   background-size: 100% 100%;
 }
 
@@ -17,10 +18,10 @@
 
 .board-heading {
   margin-top: 10px;
-  font-size: 27px;
+  font-size: 30px;
   margin-bottom: 13px;
-  text-decoration: underline;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Gupter', serif;
+  margin-left: 12%;
 }
 
 .board-index-list {
@@ -30,20 +31,20 @@
 
 .board-index-item {
   margin-top: 25px;
-  margin-left: -10px;
-  margin-bottom: 40px;
+  margin-left: -14px;
+  margin-bottom: 5%;
   border-style: solid;
-  border-width: 3px;
-  width: 205px;
-  height: 36px;
-  border-radius: 7px;
+  border-width: 2.5px;
+  width: 230px;
+  height: 100%;
+  border-radius: 6px;
   text-align: center;
-  border-color: rgb(244, 247, 248);
-  background-color: rgb(145, 165, 167);
+  border-color: rgb(27, 86, 97);
+  background: image-url("checklist.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 .board-index-item:hover {
-  background-color: rgb(120, 168, 170);
   padding: 1px;
 }
 
@@ -52,9 +53,11 @@
 }
 
 .board-index-project {
-  font-size: 27px;
-  color: rgb(249, 251, 251);
-  font-family: 'Indie Flower', cursive;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "Charlie Text",sans-serif; 
+  margin-top: 2%;
 }
 
 .modal-background {
@@ -83,7 +86,7 @@
   text-align: center;
   border-style: solid;
   border-width: 3px;
-  border-color: rgb(70, 70, 175);
+  border-color: rgb(62, 173, 177);
 }
 
 .close-x {
@@ -107,7 +110,7 @@
    font-family: 'Fredoka One', cursive;
    font-size: 25px;
    margin-bottom: 20px;
-   color: rgb(26, 26, 224);
+   color: rgb(57, 156, 160);
    text-decoration: underline;
  }
 
@@ -132,18 +135,17 @@
 
 .board-index-create {
     display: inline-block;
-    width: 100px;
+    width: 130px;
     height: 15px;
     background: #0d9abd;
-    padding: 10px;
-    padding-top: 8px;
+    padding: 13px 10px;
     text-align: center;
     border-radius: 5px;
     color: white;
     font-weight: bold;
     border: 0px solid #2597a8;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 2%;
+    margin-top: 3%;
     font-family: sans-serif;
     font-size: 16px;
     
@@ -151,7 +153,6 @@
 
 .board-index-create:hover {
   background: rgb(24, 172, 209);
-  border: 1px solid rgb(70, 170, 185);
 }
 
 .session-errors-1 {
@@ -162,8 +163,8 @@
  }
 
  .board-index-link {
-   height: 36px;
-   margin-bottom: 46px;
+   height: 170px;
+   margin-bottom: 40px;
  }
 
  .board-index-list-1 {

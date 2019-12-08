@@ -1,5 +1,5 @@
 .main-div {
-    width: 40%;
+    width: 20%;
   }
 
 .empty-div {
@@ -8,27 +8,28 @@
 
 .greet-div {
   display: flex;
-  width: 30%;
+  width: 50%;
   justify-content: flex-end;
 }
 
 .header {
   background:rgb(111, 214, 218);
-  color: rgb(221, 235, 234);
+  color: rgb(254, 255, 255);
   width: 100vw;
-  height: 5vh;
+  height: 8vh;
   display: flex;
   justify-content: space-evenly;
 }
 
 .main-nav {
-  text-align: center;
+  margin-left: 6%;
   font-size: 35px;
   font-weight: bold;
-  padding-right: 15px;
   font-family: 'Rock Salt', cursive;
   position: relative;
-  top: -17px;
+  top: -5px;
+  width: 90px;
+  cursor: pointer;
   
 }
 
@@ -54,15 +55,13 @@ div .login-signup {
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    border: 2px solid rgb(37, 151, 168);
     margin-right: 15px;
-    margin-top: 5px;
+    margin-top: 12px;
     font-family: sans-serif;
 }
 
 .auth-link:hover {
   background: rgb(58, 176, 206);
-  padding: 9px 10px;
 }
 
 .greeting-front {
@@ -70,10 +69,11 @@ div .login-signup {
 }
 
 .logged-in {
-  font-size: 29px;
-  margin-top: 6px;
+  font-size: 27px;
+  margin-top: 4%;
   margin-right: 25px;
   font-family: 'Patrick Hand', cursive;
+  height: 8vh;
 }
 
 .greeting-logout {
@@ -87,11 +87,10 @@ div .login-signup {
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    border: 2px solid rgb(37, 151, 168);
-    margin-top: 6px;
+    margin-top: 4%;
     font-family: sans-serif;
     font-size: 19px;
-    margin-right: 40px;
+    margin-right: 30px;
 
 }
 
@@ -102,29 +101,26 @@ div .login-signup {
 .main-page-all {
   display: flex;
   width: 100vw;
-  height: 63vh;
+  height: 71vh;
   background-color: rgb(111, 214, 218);
 }
 
-.main-page-all div {
-  flex: 25%;
-  height: 78%;
+.main-page-left {
+  margin-top: 7%;
+  margin-left: 5%;
 }
 
 .main-page-right {
+  width: 73%;
+  height: 61%;
   background: image-url("Collaboration-2.jpg") no-repeat;
   background-size: 100% 100%;
   border-radius: 20px 20px 20px 20px;
   position: relative;
-  left: 990px;
-  top: 33px;
+  margin-top: 7%;
+  margin-right: 12%;
 }
 
-.main-page-middle {
-  position: relative;
-  right: 480px;
-  bottom: -100px;
-}
 
 .main-signup-button {
   width: 130px;
@@ -137,48 +133,57 @@ div .login-signup {
     color: white;
     font-weight: bold;
     margin-left: 240px;
-    margin-top: 10px;
+    margin-top: 7%;
     font-family: sans-serif;
     font-size: 17px;
 }
 
 .main-signup-button:hover {
   background: rgb(114, 182, 95);
-  padding: 5.5px 0px;
 }
 
 .p1 {
-  font-size: 45px;
-  color: rgb(242, 246, 246);
+  font-size: 39px;
+  color: rgb(253, 253, 253);
   font-weight: bold;
-  margin: 5px;
-  line-height: 55px;
+  margin-left: 12%;
+  line-height: 50px;
+  font-family: "Charlie Text",sans-serif;
+  width: 65%;
 }
 
 .p2 {
-  font-size: 27px;
-  color: rgb(242, 246, 246);
-  font-weight: bold;
-  margin: 5px;
-  line-height: 55px;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  margin-left: 12%;
+  line-height: 50px;
+  font-family: "Charlie Text",sans-serif;
+  width: 60%;
 }
 
 .copyright {
   position: absolute;
   top: 91%;
-  left: 43%;
+  left: 40%;
   font-size: 20px;
 }
 
 .company-name {
   position: absolute;
   top: 82%;
-  left: 49%;
+  left: 48%;
   font-size: 25px;
   font-family: 'Rock Salt', cursive;
 }
 
+.github {
+  position: absolute;
+  top: 96%;
+  left: 48%;
+  color: rgb(45, 45, 230); 
+  font-size: 17px;
+}
 
-
-
-
+.github:hover {
+  text-decoration: underline;
+}

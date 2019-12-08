@@ -52,7 +52,7 @@ class BoardShow extends React.Component {
       const usersUl = this.props.users.map(user => 
         <li className="board-show-members"
           key={user.id}>{user.username} 
-          <button className="board-member-delete" onClick={() => this.props.removeMember(this.props.match.params.boardId, user.id)}>remove member</button>
+          <button className="board-member-delete" onClick={() => this.props.removeMember(this.props.match.params.boardId, user.id)}>remove</button>
         </li> )
       return (
         

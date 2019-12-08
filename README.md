@@ -72,5 +72,3 @@ This project was designed and built in under two weeks.
 * Users can fully edit their projects cards while having restrictions on joined projects
 * Users can remove other users they added on created projects
 
-
-
