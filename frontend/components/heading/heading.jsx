@@ -4,7 +4,7 @@ import GreetingContainer from "../greeting/greeting_container";
 
 
 const Heading = props => {
-  if (props.path !== "/login" && props.path !== "/signup") {
+  if (props.path === "/" || props.path == "/boards") {
     return <header className="header">
       <div className="empty-div">
         <nav onClick={() => props.history.push("/boards")} className="main-nav"> Todu!</nav>

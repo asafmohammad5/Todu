@@ -21,9 +21,7 @@ const App = () => (
       <ProtectedRoute exact path="/boards" component={BoardIndex} />
       <Route exact path="/" component={MainPage} />
       <ProtectedRoute exact path="/boards/:boardId" component={BoardShow} />
-    </Switch>
-    
-      
+    </Switch>        
   </div>
 )
 

@@ -67,6 +67,7 @@ class BoardShow extends React.Component {
 
            <div className="board-show-lists">
               <button className="board-button-delete" onClick={() => this.deleteOwnBoard(this.props.match.params.boardId)}>Delete board</button>
+              <div className="board-show-return" onClick={() => this.props.history.push("/boards")}>&#60;</div>
               <div className="board-show-outer">
                 <div className="board-show-form">
                   <form onSubmit={this.submit}>
@@ -101,9 +102,10 @@ class BoardShow extends React.Component {
               {usersUl}
             </ul>
           </div>
-
+         
           <div className="board-show-lists">
-            <button className="board-button-delete" 
+            <div className="board-show-return" onClick={() => this.props.history.push("/boards")}>&#60;</div>
+            <button className="board-button-delete-1" 
             onClick={() => this.props.removeMember(this.props.match.params.boardId, this.props.state.session.id)
             .then(() => this.props.history.push('/boards'))}>Leave board</button>
             

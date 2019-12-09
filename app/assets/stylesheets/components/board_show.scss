@@ -5,20 +5,19 @@
 }
 
 .board-show-side {
-  border-style: solid;
-  border-width: 5px;
-  border-color: #4c888a;
-  width: 16%;
-  height: 94vh;
-  background-color: rgb(211, 238, 234);
+  border-right: 2px solid;
+  border-color: #2f6769;
+  width: 17%;
+  height: 100vh;
+  background-color: rgb(97, 163, 189);
 }
 
 .board-show-lists {
-  background: image-url("bb.jpg") no-repeat;
+  background: image-url("board-show.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative;
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
 }
 
 .collaborators {
@@ -36,12 +35,13 @@
   margin-left: 10px;
   border-style: solid;
   border-width: 2px;
-  border-color: #7e8485;
+  border-color: #3f595d;
   margin-bottom: 2px;
   height: 22px;
   width: 180px;
   font-family: 'Patrick Hand', cursive;
   border-radius: 3px;
+  color: rgb(13, 13, 14);
 }
 
 .search-results {
@@ -70,11 +70,11 @@
 .board-member-delete {
   margin-left: 20px;
   font-size: 17px;
-  color: rgb(124, 0, 0);
+  color: rgb(7, 8, 92);
 }
 
 .board-member-delete:hover {
-  color: rgb(170, 66, 66);
+  color: rgb(76, 77, 151);
   text-decoration: underline;
 }
 
@@ -88,54 +88,92 @@
 }
 
 .board-show-heading {
+  position: relative;
+  left: 88px;
+  display: inline-block;
+  margin-top: 25px;
   text-align: center;
-  font-size: 40px;
-  font-family: 'Rock Salt', cursive;
-  color: #33595a;
+  font-size: 35px;
+  font-family: "Charlie Text",sans-serif; 
+  color: #1b3335;
   text-decoration: underline; 
   width: 33.3%;
  
 }
 
+.board-show-return {
+  font-size: 38px;
+  cursor: pointer;
+  margin-left: 30px;
+  height: 38px;
+  color: #050505;
+  width: 35px;
+}
+
+.board-show-return:hover {
+   color: #a19fa5;
+}
+
 .board-button-delete {
-  font-size: 21px;
-  margin-left: 12px;
+  float: right;
+  font-size: 19px;
+  margin-right: 17px;
   margin-top: 12px;
   border-style: solid;
   border-width: 2px;
-  border-color: #7e8485;
-  background-color: rgb(214, 132, 132);
+  background-color: rgb(137, 170, 180);
   border-radius: 4px;
-  padding: 3px 6px;
+  padding: 3px 9px;
   font-family: sans-serif;
-  color: #941f01;
-  border-color: #8a1c01;
+  color: #082233;
+  border-color: #130704;
+  font-weight: bold;
+}
+
+.board-button-delete-1 {
+  bottom: 26px;
+  position: relative;
+  float: right;
+  font-size: 19px;
+  margin-right: 17px;
+  border-style: solid;
+  border-width: 2px;
+  background-color: rgb(137, 170, 180);
+  border-radius: 4px;
+  padding: 3px 9px;
+  font-family: sans-serif;
+  color: #082233;
+  border-color: #130704;
   font-weight: bold;
 }
 
 .board-button-delete:hover {
-   background-color: rgb(207, 157, 157);
+   background-color: rgb(169, 196, 204);
 }
+
+.board-button-delete-1:hover {
+   background-color: rgb(169, 196, 204);
+}
+
 
 .add-list {
   font-size: 21px;
-  margin-left: 12px;
-  margin-right: 15px;
-  margin-top: 19px;
+  margin-left: 28px;
+  margin-top: 30px;
   border-style: solid;
   border-width: 2px;
   border-color: #7e8485;
-  background-color: rgb(80, 182, 165);
+  background-color: rgb(123, 181, 199);
   border-radius: 4px;
-  padding: 3px 6px;
+  padding: 3px 10px;
   font-family: sans-serif;
   color: #22123f;
-  border-color: #8a1c01;
+  border-color: #1b0d0a;
   font-weight: bold;
 }
 
 .add-list:hover {
-  background-color: rgb(155, 184, 179);
+  background-color: rgb(169, 196, 204);
 }
 
 .board-show-outer {
@@ -158,13 +196,14 @@
   border-radius: 4px;
   padding-left: 5px;  
   border-color: rgb(36, 34, 34);
+  margin-left: 18px;
 }
 
 .list-index-box {
   margin-left: 30px;
   width: 285px;
   height: auto;
-  background-color: rgb(211, 223, 220);
+  background-color: rgb(203, 212, 210);
   border-radius: 5px;
 }
 
@@ -178,25 +217,37 @@
 .list-index-list {
   display: flex;
   justify-content: left;
+  margin-top: 19px;
 }
 
 .list-index-button {
   margin-left: 32px;
   justify-content: right;
   margin-bottom: 5px;
-  color: rgb(187, 5, 5);
+  color: rgb(7, 8, 92);
   font-weight: bold;
   font-family: 'Source Serif Pro', serif;
   font-size: 15px;
 }
 
 .list-index-button:hover  {
-  color: rgb(167, 121, 121);
+  color: rgb(93, 95, 182);;
   text-decoration: underline;
 }
 
 .modal-form-card {
   height: 80vh;
+  width: 40vw;
+  background-color: rgb(244, 247, 248);
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(70, 171, 175);
+  border-radius: 10px;
+}
+
+.modal-form-card-1 {
+  height: 87vh;
   width: 40vw;
   background-color: rgb(244, 247, 248);
   text-align: center;
@@ -231,6 +282,15 @@
 }
 
 .modal-form-card h3 {
+   text-align: left;
+   padding-left: 14px;
+   font-family: 'Fredoka One', cursive;
+   font-size: 25px;
+   margin-bottom: 25px;
+   color: rgb(59, 100, 136);
+}
+
+.modal-form-card-1 h3 {
    text-align: left;
    padding-left: 14px;
    font-family: 'Fredoka One', cursive;
@@ -330,6 +390,12 @@
   margin-top: 3%;
 }
 
+.comments-1 {
+  display: block;
+  text-align: left;
+  margin-top: 3%;
+}
+
 .comment {
   display: block;
   text-align: left;
@@ -366,7 +432,7 @@
 }
 
 .card-index-create {
-   width: 60%;
+   width: 30%;
    display: flex;
     height: 30px;
     text-align: center; 
@@ -385,7 +451,7 @@
 .delete-card {
   margin-left: 5%;
   justify-content: right;
-  color: rgb(187, 5, 5);
+  color: rgb(7, 8, 92);
   font-weight: bold;
   font-family: 'Source Serif Pro', serif;
   font-size: 15px;
@@ -395,7 +461,7 @@
 }
 
 .delete-card:hover {
-  color: rgb(167, 121, 121);
+  color: rgb(110, 111, 163);
   text-decoration: underline;
 }
 
@@ -460,7 +526,7 @@
 .edit-card-button {
    width: 220px;
     height: 38px;
-    background: rgb(207, 204, 200);
+    background: rgb(236, 234, 231);
     text-align: left;
     border-radius: 5px;
     padding-left: 3%;
@@ -525,21 +591,21 @@
   border-width: 1px;
   border-radius: 5px;
   background-color: white;
-  height: 23px;
-  margin-top: 5%;
+  height: 24px;
+  margin-top: 2%;
   width: 300px;
   font-family: 'Patrick Hand', cursive;
 }
 
 .checklist-ul {
   display: flex;
-  height: 60px;
+  height: 70px;
   list-style: none;
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: left;
-  width: 200px;
+  width: auto;
 
   li {
      padding-right: 15px;
@@ -564,7 +630,7 @@
   color: #12313f;
   border-color: #411004;
   font-weight: bold;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 10%;
 }
 

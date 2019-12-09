@@ -109,7 +109,7 @@ class CreateCard extends React.Component {
     } else if (this.props.state.session.id === this.props.board.owner_id) {
       return (
         <div>
-          <form className="modal-form-card" onSubmit={this.submit}>
+          <form className="modal-form-card-1" onSubmit={this.submit}>
             <h3>{cardName}</h3>
 
             <div onClick={this.props.closeModal} className="close-x">X</div>
@@ -171,7 +171,7 @@ class CreateCard extends React.Component {
                 </div>
               
 
-              <label className="comments">
+              <label className="comments-1">
                 <div className="comment">Add Comment</div>
                 <textarea
                   className="textarea-create"
