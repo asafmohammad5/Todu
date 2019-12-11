@@ -42,6 +42,7 @@
   font-family: 'Patrick Hand', cursive;
   border-radius: 3px;
   color: rgb(13, 13, 14);
+  background-color: #f6f6f6;
 }
 
 .search-results {
@@ -49,6 +50,10 @@
   font-size: 20px;
   position: absolute;
   margin-left: 10px;
+  background-color: #f6f6f6;
+  border: 2px solid rgb(193, 182, 182);
+  z-index: 1;
+  width: 12.3%;
 }
 
 .board-show-members {
@@ -524,7 +529,7 @@
 
 
 .edit-card-button {
-   width: 220px;
+    width: 220px;
     height: 38px;
     background: rgb(236, 234, 231);
     text-align: left;
@@ -539,9 +544,30 @@
     margin-bottom: 2%;
 }
 
+.edit-card-button-1 {
+    width: 220px;
+    height: 38px;
+    background: rgb(22, 195, 22);
+    text-align: left;
+    border-radius: 5px;
+    padding-left: 3%;
+    color: rgb(1, 12, 1);
+    font-weight: bold;
+    margin-left: 2%;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
 .edit-card-button:hover {
   background: rgb(184, 180, 177);
 }
+
+.edit-card-button-1:hover {
+  background: rgb(63, 146, 63);
+}
+
 
 .join-card {
     margin-left: 3%;
