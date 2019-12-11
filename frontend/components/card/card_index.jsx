@@ -5,7 +5,6 @@ class CardIndex extends React.Component {
   constructor(props) {
     super(props)
 
-
     this.openModall = this.openModall.bind(this)
   }
 
@@ -22,17 +21,21 @@ class CardIndex extends React.Component {
     }
 
   const card_list = this.props.cards.map( card => {
-      let cardChecklists = Object.values(card.checklists);
+      let cardChecklists; 
       let editcardbutton;
-      for (let i = 0; i < cardChecklists.length; i++) {
-        if (cardChecklists[i].checked !== true) {
-          editcardbutton = "edit-card-button";
-          break;
-        } else {
-          editcardbutton = "edit-card-button-1" 
+      if (card.checklists) {
+        cardChecklists = Object.values(card.checklists)
+        for (let i = 0; i < cardChecklists.length; i++) {
+          if (cardChecklists[i].checked !== true) {
+            editcardbutton = "edit-card-button";
+            break;
+         } else {
+           editcardbutton = "edit-card-button-1" 
         }  
       }
-      
+    } else {
+        editcardbutton = "edit-card-button" 
+    }
     return <div className="card-index-box" key={card.id}>
             <button className={editcardbutton} onClick={this.openModall(this.props.boardId, this.props.listId, card.id)}>{card.card_name}</button>
             <button className="delete-card" onClick={() => this.props.deleteCard(this.props.boardId, this.props.listId, card.id)}>X</button>
