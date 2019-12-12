@@ -13,7 +13,7 @@ class ChecklistIndex extends React.Component {
 
     const checklists = this.props.checklists.map( checklist => {
          return (
-          <li>
+          <li key={checklist.id}>
             <CheckListIndexItem 
             checklist={checklist} 
             updateChecklist={this.props.updateChecklist} 

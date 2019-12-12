@@ -35,7 +35,8 @@ const cardReducer = (state = {}, action) => {
     case RECEIVE_BOARD:
       return Object.assign({}, state, action.payload.cards)
     case RECEIVE_CHECKLIST:
-      return Object.assign({}, state, action.payload.card)
+      let newcard = action.payload.card;
+      return Object.assign({}, state, { [newcard.id]: newcard })
     default:
       return state;
   }
