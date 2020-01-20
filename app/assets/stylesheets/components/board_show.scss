@@ -1,49 +1,71 @@
 .board-show-main {
-  display: flex;
-  width: 100vw;
-  height: 95vh;
-}
-
-.board-show-side {
-  border-right: 2px solid;
-  border-color: #2f6769;
-  width: 17%;
-  height: 100vh;
-  background-color: rgb(97, 163, 189);
-}
-
-.board-show-lists {
   background: image-url("board-show.jpg") no-repeat;
   background-size: 100% 100%;
-  position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+.collaborators-main {
+  display: flex;
+}
+
+.board-show-users {
+  margin-top: 5px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.board-show-users-1 {
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
 }
 
 .collaborators {
   font-size: 25px;
   text-align: center;
   text-decoration: underline;
+  margin-left: 15px;
   margin-top: 10px;
-  margin-bottom: 10px;
   font-family: 'Patrick Hand', cursive;
   font-weight: bold;
   color: rgb(6, 67, 102);
 }
 
+.collaborators-1 {
+  margin-top: 12px;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 17px;
+  margin-right: 3px;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bold;
+  color: rgb(4, 21, 31);
+}
+
+.search-result-item {
+  display: flex;
+  height: 35px;
+}
+
 .search-input {
   margin-left: 10px;
+  margin-top: 15px;
   border-style: solid;
   border-width: 2px;
   border-color: #3f595d;
   margin-bottom: 2px;
-  height: 22px;
+  height: 24px;
   width: 180px;
   font-family: 'Patrick Hand', cursive;
   border-radius: 3px;
   color: rgb(13, 13, 14);
   background-color: #f6f6f6;
 }
+
 
 .search-results {
   font-family: 'Patrick Hand', cursive;
@@ -54,26 +76,30 @@
   border: 2px solid rgb(193, 182, 182);
   z-index: 1;
   width: 12.3%;
+  list-style: none;
 }
 
+
 .board-show-members {
-  margin-left: 35px;
   font-family: 'Patrick Hand', cursive;
   font-size: 20px;
-  top: 90px;
-  position: relative;
+  list-style: none;
+  margin-top: 8px;
+
 }
 
 .board-show-members-2 {
-  margin-left: 35px;
   font-family: 'Patrick Hand', cursive;
   font-size: 20px;
-  top: 20px;
-  position: relative;
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 17px;
+  color: rgb(175, 234, 245);
 }
 
 .board-member-delete {
-  margin-left: 20px;
+  margin-right: 8px;
+  margin-left: 10px;
   font-size: 17px;
   color: rgb(7, 8, 92);
 }
@@ -93,20 +119,20 @@
 }
 
 .board-show-heading {
-  position: relative;
-  left: 88px;
-  display: inline-block;
-  margin-top: 25px;
-  text-align: center;
-  font-size: 35px;
+  margin-left: 15px;
+  margin-top: 9px;
+  font-size: 30px;
   font-family: "Charlie Text",sans-serif; 
   color: #1b3335;
   text-decoration: underline; 
-  width: 33.3%;
+  overflow: hidden;
+  white-space: nowrap;
  
 }
 
 .board-show-return {
+  position: relative;
+  top: 5px;
   font-size: 38px;
   cursor: pointer;
   margin-left: 30px;
@@ -136,11 +162,11 @@
 }
 
 .board-button-delete-1 {
-  bottom: 26px;
   position: relative;
   float: right;
   font-size: 19px;
   margin-right: 17px;
+  margin-top: 12px;
   border-style: solid;
   border-width: 2px;
   background-color: rgb(137, 170, 180);
@@ -181,17 +207,19 @@
   background-color: rgb(169, 196, 204);
 }
 
-.board-show-outer {
+.board-show-top {
   display: flex;
-  justify-content: space-evenly;
+  width: auto;
 }
 
 .board-show-form {
+  position: relative;
   width: 33.3%;
 }
 .board-show-empty {
   width: 33.3%;
 }
+
 
 .board-show-list-input {
   font-family: 'Patrick Hand', cursive;
@@ -419,7 +447,7 @@
 }
 
 .modal-create-card {
-  width: 140px;
+    width: 140px;
     height: 28px;
     background: #5AAC44;
     padding: 8px 50px;
@@ -428,7 +456,7 @@
     color: white;
     font-weight: bold;
     margin-right: 5px;
-    margin-top: 2%;
+    margin-top: 4%;
     font-family: sans-serif;
 }
 
@@ -730,7 +758,7 @@
     color: white;
     font-weight: bold;
     margin-right: 5px;
-    margin-top: 10%;
+    margin-top: 5%;
     font-family: sans-serif;
 }
 

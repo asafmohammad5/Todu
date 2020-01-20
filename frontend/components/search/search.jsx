@@ -36,7 +36,7 @@ class Search extends React.Component {
         <input
          className="search-input"
          type="text"
-         placeholder="Search user"
+         placeholder="Add member"
          value={this.state.searchTerm}
          onChange={this.update}
         />

@@ -50,25 +50,28 @@ class BoardShow extends React.Component {
 
     if (this.props.board.owner_id === this.props.state.session.id) {
       const usersUl = this.props.users.map(user => 
-        <li className="board-show-members"
+        <div className="board-show-members"
           key={user.id}>{user.username} 
           <button className="board-member-delete" onClick={() => this.props.removeMember(this.props.match.params.boardId, user.id)}>remove</button>
-        </li> )
+        </div> )
       return (
         
         <div className="board-show-main">
-          <div className="board-show-side">
-            <h2 className="collaborators">Collaborators</h2>
-            <Search boardId={this.props.match.params.boardId} />
-            <ul className="search-result-item">
-              {usersUl}
-            </ul>
-          </div>
-
-           <div className="board-show-lists">
+      
               <button className="board-button-delete" onClick={() => this.deleteOwnBoard(this.props.match.params.boardId)}>Delete board</button>
-              <div className="board-show-return" onClick={() => this.props.history.push("/boards")}>&#60;</div>
+             
               <div className="board-show-outer">
+              <div className="board-show-top"> 
+                <div className="board-show-return" onClick={() => this.props.history.push("/boards")}>&#60;</div>
+                <h1 className="board-show-heading">{this.props.board.project_name}</h1>
+                <div className="collaborators-main">
+                  <div className="collaborators"></div>
+                   <Search boardId={this.props.match.params.boardId} />
+                  <div className="search-result-item">
+                    <div className="board-show-users">{usersUl}</div>
+                  </div>
+                </div>
+              </div>
                 <div className="board-show-form">
                   <form onSubmit={this.submit}>
                     <button className="add-list">Add list</button>
@@ -80,41 +83,37 @@ class BoardShow extends React.Component {
                     placeholder="Enter list name"
                     />
                   </form>
-              </div>
-
-                <h2 className="board-show-heading">{this.props.board.project_name}</h2>
+              </div>     
+            
                 <div className="board-show-empty"></div>
             </div>
                <ul>
                  <ListIndex boardId={this.props.match.params.boardId} />
                </ul>
-           </div>
-
         </div>
       )
     } else {
-      const usersUl = this.props.users.map(user => <li key={user.id}>{user.username}</li>)
+      const usersUl = this.props.users.map(user => <div className="board-show-members-2"
+        key={user.id}>{user.username} </div> )
       return (
         <div className="board-show-main">
-          <div className="board-show-side">
-            <h2 className="collaborators">Collaborators</h2>
-            <ul className="board-show-members-2">
-              {usersUl}
-            </ul>
-          </div>
+          <button className="board-button-delete-1"
+            onClick={() => this.props.removeMember(this.props.match.params.boardId, this.props.state.session.id)
+              .then(() => this.props.history.push('/boards'))}>Leave board</button>
+          
          
           <div className="board-show-lists">
-            <div className="board-show-return" onClick={() => this.props.history.push("/boards")}>&#60;</div>
-            <button className="board-button-delete-1" 
-            onClick={() => this.props.removeMember(this.props.match.params.boardId, this.props.state.session.id)
-            .then(() => this.props.history.push('/boards'))}>Leave board</button>
-            
+        
             <div className="board-show-outer">
-              <div className="board-show-form">
-
-              </div>
-
+              <div className="board-show-top"> 
+              <div className="board-show-return" onClick={() => this.props.history.push("/boards")}>&#60;</div>
               <h2 className="board-show-heading">{this.props.board.project_name}</h2>
+                <h2 className="collaborators-1">Members</h2>
+                <div className="search-result-item">
+                  <div className="board-show-users-1">{usersUl}</div>
+                </div>
+                </div>
+              
               <div className="board-show-empty"></div>
             </div>
             <ul>

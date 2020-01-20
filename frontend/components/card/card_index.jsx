@@ -53,9 +53,24 @@ class CardIndex extends React.Component {
         buttonFunc = () => this.props.addMember(this.props.boardId, this.props.listId, card.id, this.props.user.id);
         buttonName = 'join';
       };
+      let cardChecklists;
+      let editcardbutton;
+      if (card.checklists) {
+        cardChecklists = Object.values(card.checklists)
+        for (let i = 0; i < cardChecklists.length; i++) {
+          if (cardChecklists[i].checked !== true) {
+            editcardbutton = "edit-card-button";
+            break;
+          } else {
+            editcardbutton = "edit-card-button-1"
+          }
+        }
+      } else {
+        editcardbutton = "edit-card-button"
+      }
         return (
         <div className="card-index-box" key={card.id}>
-          <button className="edit-card-button" onClick={this.openModall(this.props.boardId, this.props.listId, card.id)}>{card.card_name}</button>
+          <button className={editcardbutton} onClick={this.openModall(this.props.boardId, this.props.listId, card.id)}>{card.card_name}</button>
           <button className="join-card" onClick={buttonFunc}>{buttonName}</button>
          </div>
         )

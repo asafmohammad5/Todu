@@ -6,7 +6,7 @@
 .board-index {
   display: flex;
   width: 100vw;
-  height: 92vh;
+  min-height: 100vh;
   background: rgb(111,214,218);
   background: linear-gradient(180deg, rgba(111,214,218,1) .5%, rgb(188, 219, 221) 21%, rgb(221, 233, 233) 44%, rgb(238, 241, 241) 100%);
   background-size: 100% 100%;
@@ -27,7 +27,6 @@
 .board-index-list {
   width: 50px; 
 }
-
 
 .board-index-item {
   margin-top: 25px;
