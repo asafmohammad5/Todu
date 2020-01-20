@@ -7,6 +7,15 @@ Todu! is a Trello clone with some slight differences. With the Todu! app, you ca
 
 ![GitHub Logo](/app/assets/images/Todu-main.png)
 
+## Technologies implemented
+* Rails
+* Ruby
+* Javascript
+* React/Redux
+* Postgres
+* CSS/SCSS
+* HTML
+
 
 ## Boards/Lists/Cards
 
@@ -53,13 +62,7 @@ Finally, the boards controller sends back only the boards that the user has crea
 
 This project was designed and built in under two weeks.
 
-## Technologies implemented
-* Rails
-* Javascript
-* React/Redux
-* Postgres
-* CSS/SCSS
-* HTML
+
 
 ## Features
 
