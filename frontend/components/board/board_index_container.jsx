@@ -7,6 +7,7 @@ import { createdBoardSelector, joinedBoardSelector } from '../../reducers/select
 const msp = state => {
   let user = state.entities.users[state.session.id]
   let createdBoards, joinedBoards;
+  
   if (user) {
     createdBoards = createdBoardSelector(state, user);
     joinedBoards = joinedBoardSelector(state, user)
