@@ -32,7 +32,7 @@ class BoardIndex extends React.Component {
 
     return (
         <div className="board-index">
-
+        <div className="board-index-t"></div>
           <div className="board-create">
             <button className="board-index-create" onClick={() => this.props.openModal({modal: 'create'})}>Create board</button>
           </div>
@@ -43,14 +43,14 @@ class BoardIndex extends React.Component {
                {createdBoards}
               </ul>
           </div>
-
+        
           <div className="joined-boards">
             <h2 className="board-heading">Joined Boards</h2>
             <ul className="board-index-list-1">
               {joinedBoards}
             </ul>
           </div>
-
+       
         </div>
     )
   }

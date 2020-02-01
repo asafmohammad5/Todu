@@ -1,16 +1,27 @@
 .div {
   width: 100vw;
   height: 100vh;
+
 }
 
 .board-index {
   display: flex;
   width: 100vw;
-  min-height: 100vh;
-  background: rgb(111,214,218);
-  background: linear-gradient(180deg, rgba(111,214,218,1) .5%, rgb(188, 219, 221) 21%, rgb(221, 233, 233) 44%, rgb(238, 241, 241) 100%);
-  background-size: 100% 100%;
+  min-height: 92vh;
+  // background: image-url("background-image-index.png") no-repeat; 
+  // background-size: 100% 100%;
 }
+
+.board-index-t {
+  position: absolute;
+  width: 100vw;
+  min-height: 92vh;
+  background: image-url("background-image-index.png") no-repeat; 
+  background-size: 100% 100%;
+  z-index: -1;
+  opacity: .5;
+}
+
 
 .board-index div {
   flex: 25%;
@@ -21,7 +32,7 @@
   font-size: 30px;
   margin-bottom: 13px;
   font-family: sans-serif;
-  margin-left: 12%;
+  margin-left: 9%;
 }
 
 .board-index-list {
@@ -147,8 +158,8 @@
     margin-top: 3%;
     font-family: sans-serif;
     font-size: 16px;
-    
 }
+
 
 .board-index-create:hover {
   background: rgb(24, 172, 209);

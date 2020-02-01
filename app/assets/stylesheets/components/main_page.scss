@@ -12,8 +12,24 @@
   justify-content: flex-end;
 }
 
+.greet-div-1 {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  color: rgb(2, 44, 46);
+}
+
 .header {
   background:rgb(111, 214, 218);
+  color: rgb(254, 255, 255);
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-1 {
+  background:white;
   color: rgb(254, 255, 255);
   width: 100vw;
   height: 8vh;
@@ -30,7 +46,18 @@
   top: -5px;
   width: 90px;
   cursor: pointer;
-  
+}
+
+.main-nav-1 {
+  margin-left: 6%;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Rock Salt', cursive;
+  position: relative;
+  top: -5px;
+  width: 90px;
+  cursor: pointer;
+  color: rgb(111, 214, 218);
 }
 
 div .login-signup {
@@ -111,8 +138,8 @@ div .login-signup {
 }
 
 .main-page-right {
-  width: 73%;
-  height: 61%;
+  width: 75%;
+  height: 63%;
   background: image-url("Collaboration-2.jpg") no-repeat;
   background-size: 100% 100%;
   border-radius: 20px 20px 20px 20px;
@@ -143,7 +170,7 @@ div .login-signup {
 }
 
 .p1 {
-  font-size: 39px;
+  font-size: 41px;
   color: rgb(253, 253, 253);
   font-weight: bold;
   margin-left: 12%;
@@ -153,7 +180,7 @@ div .login-signup {
 }
 
 .p2 {
-  font-size: 22px;
+  font-size: 21px;
   color: rgb(255, 255, 255);
   margin-left: 12%;
   line-height: 50px;
