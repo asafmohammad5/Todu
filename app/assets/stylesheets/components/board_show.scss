@@ -30,7 +30,7 @@
   text-decoration: underline;
   margin-left: 15px;
   margin-top: 10px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   font-weight: bold;
   color: rgb(6, 67, 102);
 }
@@ -41,7 +41,7 @@
   text-align: center;
   margin-left: 17px;
   margin-right: 3px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   font-weight: bold;
   color: rgb(4, 21, 31);
 }
@@ -59,9 +59,9 @@
   border-color: #3f595d;
   margin-bottom: 2px;
   padding-left: 4px;
-  height: 24px;
+  height: 26px;
   width: 180px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   border-radius: 3px;
   color: rgb(13, 13, 14);
   background-color: #f6f6f6;
@@ -69,7 +69,7 @@
 
 
 .search-results {
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   font-size: 20px;
   position: absolute;
   margin-left: 10px;
@@ -82,15 +82,15 @@
 
 
 .board-show-members {
-  font-family: 'Patrick Hand', cursive;
-  font-size: 20px;
+  font-family: sans-serif;
+  font-size: 17px;
   list-style: none;
   margin-top: 8px;
 
 }
 
 .board-show-members-2 {
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   font-size: 20px;
   list-style: none;
   margin-right: 10px;
@@ -101,7 +101,7 @@
 .board-member-delete {
   margin-right: 8px;
   margin-left: 10px;
-  font-size: 17px;
+  font-size: 15px;
   color: rgb(7, 8, 92);
 }
 
@@ -123,7 +123,7 @@
   margin-left: 15px;
   margin-top: 9px;
   font-size: 30px;
-  font-family: "Charlie Text",sans-serif; 
+  font-family: sans-serif;
   color: #1b3335;
   text-decoration: underline; 
   overflow: hidden;
@@ -223,8 +223,8 @@
 
 
 .board-show-list-input {
-  font-family: 'Patrick Hand', cursive;
-  height: 35px;
+  font-family: sans-serif;
+  height: 30px;
   width: 200px;
   background-color: rgb(168, 194, 187);
   border-radius: 4px;
@@ -245,7 +245,8 @@
   font-size: 33px;
   margin-left: 10px;
   font-weight: bold;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
+  padding-top: 5px;
 }
 
 .list-index-list {
@@ -260,7 +261,7 @@
   margin-bottom: 5px;
   color: rgb(7, 8, 92);
   font-weight: bold;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-size: 15px;
 }
 
@@ -318,7 +319,7 @@
 .modal-form-card h3 {
    text-align: left;
    padding-left: 14px;
-   font-family: 'Fredoka One', cursive;
+   font-family: sans-serif;
    font-size: 25px;
    margin-bottom: 25px;
    color: rgb(59, 100, 136);
@@ -327,7 +328,7 @@
 .modal-form-card-1 h3 {
    text-align: left;
    padding-left: 14px;
-   font-family: 'Fredoka One', cursive;
+   font-family: sans-serif;
    font-size: 25px;
    margin-bottom: 25px;
    color: rgb(59, 100, 136);
@@ -340,7 +341,7 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   background-color: white;
   padding-left: 5px;
 }
@@ -356,7 +357,7 @@
 
 .members-head {
   font-size: 20px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
   color: rgb(71, 32, 109);
 }
@@ -379,7 +380,7 @@
 .due-date {
   margin-top: 1%;
   font-size: 20px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
   margin-right: 7%;
 }
@@ -388,7 +389,7 @@
   width: 150px;
   display: block;
   font-size: 18px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
 }
 
 .description {
@@ -400,7 +401,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
@@ -408,7 +409,7 @@
   display: block;
   text-align: left;
   margin-top: 2.5%;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
@@ -434,7 +435,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
@@ -443,7 +444,7 @@
   height: 20vh;
   width: 100%;
   background-color: white;
-  font-family: 'Patrick Hand', cursive; 
+  font-family: sans-serif;
   padding-left: 5px;
 }
 
@@ -487,7 +488,7 @@
   justify-content: right;
   color: rgb(7, 8, 92);
   font-weight: bold;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-size: 15px;
   border-style: solid;
   border-width: 1px;
@@ -503,7 +504,7 @@
   display: block;
   text-align: left;
   margin-top: 2.5%;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   height: 30px;
   width: 330px;
   padding-left: 5px;
@@ -517,7 +518,7 @@
 .due-date-1 {
   margin-top: 1%;
   font-size: 20px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
   width: 90%;
   margin-left: 0%;
@@ -535,13 +536,13 @@
   width: 150px;
   display: block;
   font-size: 18px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   margin-left: 40%;
 }
 
 .members-head-1 {
   font-size: 20px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
   color: rgb(71, 32, 109);
   margin-top: 1%;
@@ -552,7 +553,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
@@ -567,7 +568,7 @@
     color: rgb(61, 59, 59);
     font-weight: bold;
     margin-left: 2%;
-    font-family: 'Patrick Hand', cursive;
+    font-family: sans-serif;
     font-size: 20px;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -583,7 +584,7 @@
     color: rgb(1, 12, 1);
     font-weight: bold;
     margin-left: 2%;
-    font-family: 'Patrick Hand', cursive;
+    font-family: sans-serif;
     font-size: 20px;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -603,7 +604,7 @@
     margin-bottom: 5px;
     color: #bb0505;
     font-weight: bold;
-    font-family: 'Source Serif Pro', serif;
+    font-family: sans-serif;
     font-size: 15px;
 }
 
@@ -618,7 +619,7 @@
 
 .card-user {
   font-size: 15px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
   margin-left: 1%;
 }
 
@@ -627,7 +628,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
@@ -636,7 +637,7 @@
   display: flex;
   margin-top: 2%;
   font-size: 22px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
@@ -649,7 +650,7 @@
   height: 24px;
   margin-top: 2%;
   width: 300px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: sans-serif;
 }
 
 .checklist-ul {
@@ -664,7 +665,7 @@
 
   li {
      padding-right: 15px;
-     font-family: 'Patrick Hand', cursive;
+     font-family: sans-serif;
   }
 }
 
@@ -697,7 +698,7 @@
   margin-left: 10px;
   color: #bb0505;
   font-weight: bold;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-size: 13px;
 }
 
@@ -716,7 +717,7 @@
 .due-date-2 {
   margin-top: 1%;
   font-size: 20px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
   width: 90%;
   margin-left: 46%;
@@ -745,7 +746,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
@@ -776,7 +777,7 @@
   margin-top: 200%;
   color: #0c506b;
   font-weight: bold;
-  font-family: 'Source Serif Pro', serif;
+  font-family: sans-serif;
   font-size: 15px;
   height: 20px;
 }
