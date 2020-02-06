@@ -5,13 +5,15 @@ import ListIndex from '../list/list_index_container';
 
 class BoardShow extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
+    this.ref = React.createRef();
 
     this.state = {
       loading: true,
-      listName: ""
+      listName: "" 
     }
     this.submit = this.submit.bind(this);
+    this.handleToggle = this.handleToggle.bind(this);
   }
 
   componentDidMount () {
@@ -26,6 +28,17 @@ class BoardShow extends React.Component {
 
   clearState () {
     this.setState({listName: ""})
+  }
+
+  handleToggle (e, userId) {
+    e.preventDefault();
+
+    let node = document.getElementById(userId)
+    if (node.classList.contains("hidden")) {
+      node.classList.replace("hidden", "show")
+    } else {
+      node.classList.replace("show", "hidden")
+    }
   }
 
   submit(e) {
@@ -50,9 +63,9 @@ class BoardShow extends React.Component {
 
     if (this.props.board.owner_id === this.props.state.session.id) {
       const usersUl = this.props.users.map(user => 
-        <div className="board-show-members"
-          key={user.id}>{user.username} 
-          <button className="board-member-delete" onClick={() => this.props.removeMember(this.props.match.params.boardId, user.id)}>remove</button>
+        <div className="board-show-members" key={user.id}> 
+          <div className="clicker" onClick={(e) => this.handleToggle(e, user.id)}>{user.username}</div>
+          <button className="hidden" id={user.id} onClick={() => this.props.removeMember(this.props.match.params.boardId, user.id)}>remove</button>
         </div> )
       return (
         
