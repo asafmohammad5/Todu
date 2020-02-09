@@ -802,6 +802,173 @@
 }
 
 
+@media only screen and (min-width: 2200px) { 
+  .ul-list-index {
+    margin-top: 50px;
+  }
+
+  .list-index-list {
+    display: flex;
+    justify-content: left;
+    margin-top: 19px;
+
+}
+
+.list-index-box {
+    margin-left: 60px;
+    width: 285px;
+    height: auto;
+    background-color: #cbd4d2;
+    border-radius: 5px;
+  }
+
+  .list-index-button {
+    margin-left: 62px;
+    justify-content: right;
+    margin-bottom: 5px;
+    color: #07085c;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+ }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+
+  .collaborators-main {
+    position: relative;
+    display: block;
+    top: 40px;
+    left: 11%;
+    }    
+
+  .board-show-return {
+    position: relative;
+    top: 0px;
+    font-size: 38px;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 38px;
+    color: #050505;
+    width: 35px;
+}
+
+  .board-show-heading {
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #1b3335;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+  .board-index-edit-button {
+    margin-left: 20%;
+    margin-top: 150%;
+    color: #0c506b;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+    height: 20px;
+}
+
+.board-button-delete {
+    float: right;
+    font-size: 17px;
+    margin-right: 17px;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #89aab4;
+    border-radius: 4px;
+    padding: 3px 3px;
+    font-family: sans-serif;
+    color: #082233;
+    border-color: #130704;
+    font-weight: bold;
+  }
+
+  .search-result-item {
+    height: 70px;
+    margin-left: -40px;
+
+}
+
+.search-results {
+    font-family: sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 10px;
+    background-color: #f6f6f6;
+    border: 2px solid #c1b6b6;
+    z-index: 1;
+    width: 89%;
+    list-style: none;
+}
+
+form {
+  display: flex;
+}
+
+.board-show-form {
+    position: relative;
+    width: fit-content;
+
+}
+
+.add-list {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #7e8485;
+    background-color: #7bb5c7;
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-family: sans-serif;
+    color: #22123f;
+    border-color: #1b0d0a;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.board-show-list-input {
+    font-family: sans-serif;
+    height: 30px;
+    width: 180px;
+    background-color: #a8c2bb;
+    border-radius: 4px;
+    padding-left: 5px;
+    border-color: #242222;
+    margin-top: 20px;
+}
+
+.list-index-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+    margin-left: -10px;
+ }
+
+ .list-index-button {
+    margin-top: 13px;
+    margin-left: 32px;
+    justify-content: right;
+    margin-bottom: 5px;
+    color: #07085c;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+ }
+}
+
+
+
 
 
 

@@ -100,7 +100,7 @@ class BoardShow extends React.Component {
             
                 <div className="board-show-empty"></div>
             </div>
-               <ul>
+               <ul className="ul-list-index">
                  <ListIndex boardId={this.props.match.params.boardId} />
                </ul>
         </div>

@@ -144,3 +144,61 @@
   margin-right: 2px;
 }
 
+
+
+@media only screen and (min-width: 2200px) { 
+   .session-button {
+    width: 200px;
+    height: 24px;
+    background: #5AAC44;
+    padding: 8px 40px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 12px;
+    font-family: sans-serif;
+    font-size: 21px;
+ }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+
+  .main-h2 {
+    position: relative;
+    margin: auto;
+    width: 90px; 
+    font-size: 30px;
+  }
+
+  .session-button {
+    width: 100px;
+    height: 21px;
+    background: #5AAC44;
+    padding: 8px 38px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 12px;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+  
+  
+  .login-form-form {
+    display: inline-block;
+    width: 68vw;
+    height: 58vh;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    padding: 0px 10px;
+    margin-bottom: 7px;
+    padding-top: 10px;
+    margin-top: 3%;
+  }
+}

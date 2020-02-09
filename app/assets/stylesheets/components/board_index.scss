@@ -183,3 +183,113 @@
 }
 
 
+
+@media only screen and (min-width: 2200px) { 
+
+.created-boards {
+  position: relative;
+  top: 70px;
+  right: 85px;
+}
+
+.joined-boards {
+  position: relative;
+  top: 70px;
+  right: 40px;
+ }
+
+ .board-heading {
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 13px;
+    font-family: sans-serif;
+    margin-left: 4%;
+    width: 200px;
+ }
+
+ .board-index-create {
+    display: inline-block;
+    width: 130px;
+    height: 15px;
+    background: #0d9abd;
+    padding: 13px 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 0px solid #2597a8;
+    margin-left: 2%;
+    margin-top: 0%;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+
+ .board-index-create {
+    display: inline-block;
+    width: 100px;
+    height: 15px;
+    background: #0d9abd;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 0px solid #2597a8;
+    margin-left: 5%;
+    margin-top: 3%;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.board-index-item {
+    margin-top: 10px;
+    margin-left: -14px;
+    margin-bottom: 0%;
+    border-style: solid;
+    border-width: 2.5px;
+    width: 100px;
+    height: 80%;
+    border-radius: 6px;
+    text-align: center;
+    border-color: #1b5661;
+    background: image-url("checklist.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+  .board-index-link {
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+.board-create {
+  height: fit-content;
+}
+
+.created-boards {
+  position: relative;
+  top: 70px;
+  right: 85px;
+}
+
+.board-heading {
+    margin-top: 10px;
+    font-size: 17px;
+    margin-bottom: 13px;
+    font-family: sans-serif;
+    margin-left: 3%;
+    width: 110px;
+}
+
+
+.joined-boards {
+  position: relative;
+  top: 70px;
+  right: 40px;
+ }
+  
+}
+

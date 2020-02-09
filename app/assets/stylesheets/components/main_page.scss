@@ -214,3 +214,261 @@ div .login-signup {
 .github:hover {
   text-decoration: underline;
 }
+
+
+
+
+@media only screen and (min-width: 2200px) {
+  .main-page-right {
+    width: 70%;
+    height: 70%;
+    background: image-url("Collaboration-2.jpg") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+    margin-top: 4%;
+    margin-right: 8%;
+ }
+
+ .main-nav {
+    margin-left: 4%;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+    position: relative;
+    top: -5px;
+    width: 90px;
+    cursor: pointer;
+ }
+
+ .main-nav-1 {
+  margin-left: 4%;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Rock Salt', cursive;
+  position: relative;
+  top: -5px;
+  width: 90px;
+  cursor: pointer;
+  color: rgb(111, 214, 218);
+}
+
+ .main-page-left {
+   margin-top: 5%;
+   margin-left: 2%;
+ }
+
+ .p1 {
+    font-size: 55px;
+    color: #fdfdfd;
+    font-weight: bold;
+    margin-left: 12%;
+    line-height: 75px;
+    font-family: sans-serif;
+    width: 65%;
+    margin-bottom: 40px;
+ }
+
+.p2 {
+    font-size: 35px;
+    color: white;
+    margin-left: 12%;
+    line-height: 58px;
+    font-family: sans-serif;
+    width: 60%;
+ }
+
+.main-signup-button {
+    width: 160px;
+    display: inline-block;
+    height: 50px;
+    background: #5AAC44;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-left: 33%;
+    margin-top: 8%;
+    font-family: sans-serif;
+    font-size: 22px;
+  }
+
+.copyright {
+    position: absolute;
+    top: 91%;
+    left: 43.5%;
+    font-size: 20px;
+  }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+
+  .header-1 {
+    background: white;
+    color: #feffff;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    //  
+}
+
+ .greet-div-1 {
+    display: flex;
+    width: 35%;
+    justify-content: flex-end;
+    color: #022c2e;
+}
+
+.greeting-front {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.greeting-logout {
+    display: block;
+    width: 80px;
+    height: 17px;
+    background: #0d9abd;
+    padding: 3px;
+    padding-top: 3px;
+    // text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 4%;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+ .logged-in {
+    font-size: 17px;
+    margin-top: 4%;
+    font-family: 'Patrick Hand', cursive;
+    height: 20px;
+    width: 125px;
+    margin-right: -19px;
+}
+
+  .auth-link {
+    display: block;
+    width: 75px;
+    height: 17px;
+    background: #0d9abd;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 12px;
+    font-family: sans-serif;
+  }
+
+  .main-page-right {
+    width: 90%;
+    height: 27%;
+    background: image-url("Collaboration-2.jpg") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    top: 6%;
+    left: 5%;
+ }
+
+ .main-nav {
+  margin-left: 9%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Rock Salt', cursive;
+  position: relative;
+  top: -7px;
+  width: 90px;
+  cursor: pointer;
+ } 
+
+ .main-nav-1 {
+    margin-left: -4%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+    position: relative;
+    top: -5px;
+    width: 90px;
+    cursor: pointer;
+    color: #6fd6da;
+}
+
+ .main-page-left {
+   margin-top: 61%;
+   margin-left: 2%;
+ }
+
+ .p1 {
+  font-size: 15px;
+  color: rgb(253, 253, 253);
+  font-weight: bold;
+  margin-left: 12%;
+  line-height: 30px;
+  font-family: sans-serif;
+  width: 75%;
+  margin-bottom: 10px;
+ }
+
+.p2 {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  margin-left: 12%;
+  line-height: 30px;
+  font-family: sans-serif;
+  width: 75%;
+ }
+
+.main-signup-button {
+    width: 130px;
+    display: inline-block;
+    height: 30px;
+    background: #5AAC44;
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-left: 33%;
+    margin-top: 10%;
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+
+
+.copyright {
+  position: absolute;
+  top: 91%;
+  left: 22%;
+  font-size: 14px;
+ }
+
+ .company-name {
+    position: absolute;
+    top: 82%;
+    left: 40%;
+    font-size: 25px;
+    font-family: 'Rock Salt', cursive;
+}
+
+.github {
+    position: absolute;
+    top: 96%;
+    left: 40%;
+    color: #2d2de6;
+    font-size: 17px;
+  }
+}
+
+
+
+
+
+
+
