@@ -97,7 +97,6 @@ class BoardShow extends React.Component {
                     />
                   </form>
               </div>     
-            
                 <div className="board-show-empty"></div>
             </div>
                <ul className="ul-list-index">
