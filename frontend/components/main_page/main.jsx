@@ -24,6 +24,7 @@ const MainPage = ({signedIn}) => {
         <nav>
           <nav className="company-name">Todu!</nav>
           <nav className="copyright"> © Copyright 2019. All rights reserved.</nav>
+
           <nav className="github"> 
             <a target="_blank" href="https://github.com/asafmohammad5">
               <i className="fab fa-github"></i> Github
