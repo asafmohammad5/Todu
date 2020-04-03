@@ -9,7 +9,7 @@ const MainPage = ({signedIn}) => {
       <div className="main-page-all">
         <div className="main-page-left">
           <p className="p1">
-            Todu! lets you tackle multiple projects in an easy, fast, and efficient way.
+            Todu! helps you tackle multiple projects in a easy and efficient way.
             </p>
           <p className="p2">
             With Todu! you can invite others to your project or simply work on it alone.

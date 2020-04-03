@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Greeting = (props) => {
   const links = () => (
     <nav className="login-signup">
-      <div className="auth-link">
-        <Link to="/login">Login</Link>
+      <div className="auth-link-1">
+        <Link to="/login">Log in</Link>
       </div>
       <div className="auth-link">
         <Link to="/signup">Sign up</Link>
