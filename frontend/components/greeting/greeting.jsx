@@ -16,8 +16,8 @@ const Greeting = (props) => {
     const name = props.currentUser.username[0].toUpperCase() + props.currentUser.username.slice(1)
     return (
     <nav className="greeting-front">
-      <h2 className="logged-in">Hello,  {name}!</h2>
-      <button className="greeting-logout" onClick={() => props.logout().then(() => props.ownProps.history.push("/"))}>Log Out</button>
+      <h2 className="logged-in">{name}</h2>
+      <button className="greeting-logout" onClick={() => props.logout().then(() => props.ownProps.history.push("/"))}>Logout</button>
     </nav>
     )
   };

@@ -31,7 +31,7 @@
   margin-top: 10px;
   font-size: 30px;
   margin-bottom: 13px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-left: 9%;
 }
 
@@ -66,7 +66,7 @@
   font-size: 21px;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-top: 2%;
 }
 
@@ -112,12 +112,12 @@
   border-style: solid;
   border-width: 3px;
   border-color: rgb(156, 155, 158);
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
  }
 
  .modal-form h3 {
    padding: 20px;
-   font-family: sans-serif;
+   font-family: 'Roboto', sans-serif;
    font-size: 25px;
    margin-bottom: 20px;
    color: rgb(57, 156, 160);
@@ -136,7 +136,7 @@
     font-weight: bold;
     margin-right: 5px;
     margin-top: 65px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
  }
 
  .modal-create-board:hover {
@@ -145,24 +145,25 @@
 
 .board-index-create {
     display: inline-block;
-    width: 130px;
+    width: 110px;
     height: 15px;
-    background: #0d9abd;
-    padding: 13px 10px;
+    background: #abadad;
+    padding: 12px 9px;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: rgb(253, 252, 252);
     font-weight: bold;
     border: 0px solid #2597a8;
     margin-left: 2%;
     margin-top: 3%;
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
 }
 
 
 .board-index-create:hover {
-  background: rgb(24, 172, 209);
+  background: #9da0a0;
+  color: rgb(100, 112, 163);
 }
 
 .session-errors-1 {
@@ -202,7 +203,7 @@
     margin-top: 10px;
     font-size: 30px;
     margin-bottom: 13px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 4%;
     width: 200px;
  }
@@ -220,7 +221,7 @@
     border: 0px solid #2597a8;
     margin-left: 2%;
     margin-top: 0%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
   }
 }
@@ -241,7 +242,7 @@
     border: 0px solid #2597a8;
     margin-left: 5%;
     margin-top: 3%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
 
@@ -279,7 +280,7 @@
     margin-top: 10px;
     font-size: 17px;
     margin-bottom: 13px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 3%;
     width: 110px;
 }
