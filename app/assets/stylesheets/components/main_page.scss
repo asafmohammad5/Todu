@@ -127,7 +127,6 @@ div .login-signup {
   display: block;
     width: 80px;
     height: 17px;
-    // background: rgb(13, 154, 189);
     padding: 10px;
     padding-top: 8px;
     text-align: center;
@@ -351,26 +350,29 @@ div .login-signup {
     display: block;
     width: 80px;
     height: 17px;
-    background: #0d9abd;
     padding: 3px;
     padding-top: 3px;
-    // text-align: center;
     border-radius: 5px;
-    color: white;
+    color: rgb(190, 24, 9);
     font-weight: bold;
-    margin-top: 4%;
+    margin-top: 2.7%;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin-left: 3px;
+    font-size: 19px;
+    margin-left: 5px;
+    margin-right: -10px;
+}
+
+.greeting-logout:hover {
+   text-decoration: underline;
 }
 
  .logged-in {
-    font-size: 17px;
+    font-size: 19px;
     margin-top: 4%;
     font-family: 'Roboto', sans-serif;
     height: 20px;
     width: 125px;
-    margin-right: -19px;
+    margin-right: -40px;
 }
 
   .auth-link {
@@ -465,7 +467,7 @@ div .login-signup {
 .copyright {
   position: absolute;
   top: 91%;
-  left: 16%;
+  left: 20%;
   font-size: 14px;
  }
 
@@ -481,9 +483,16 @@ div .login-signup {
     position: absolute;
     top: 96%;
     left: 40%;
-    color: #2d2de6;
+    color: rgb(18, 18, 19); 
     font-size: 17px;
   }
+
+
+.github:hover {
+  text-decoration: underline;
+  color: rgb(63, 63, 67); 
+}
+
 }
 
 

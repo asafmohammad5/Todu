@@ -8,8 +8,6 @@
   display: flex;
   width: 100vw;
   min-height: 92vh;
-  // background: image-url("background-image-index.png") no-repeat; 
-  // background-size: 100% 100%;
 }
 
 .board-index-t {
@@ -149,6 +147,7 @@
     height: 15px;
     background: #abadad;
     padding: 12px 9px;
+    padding-top: 11px;
     text-align: center;
     border-radius: 5px;
     color: rgb(253, 252, 252);
@@ -208,24 +207,30 @@
     width: 200px;
  }
 
- .board-index-create {
+.board-index-create {
     display: inline-block;
     width: 130px;
     height: 15px;
-    background: #0d9abd;
-    padding: 13px 10px;
+    background: #abadad;
+    padding: 12px 9px;
+    padding-top: 11px;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: rgb(253, 252, 252);
     font-weight: bold;
     border: 0px solid #2597a8;
     margin-left: 2%;
-    margin-top: 0%;
+    margin-top: -5%;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-  }
+    font-size: 17px;
 }
 
+
+.board-index-create:hover {
+  background: #9da0a0;
+  color: rgb(100, 112, 163);
+  }
+}
 
 
 @media only screen and (max-width: 550px) {
@@ -234,10 +239,10 @@
     display: inline-block;
     width: 100px;
     height: 15px;
-    background: #0d9abd;
+    background: #abadad;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: rgb(253, 252, 252);
     font-weight: bold;
     border: 0px solid #2597a8;
     margin-left: 5%;
@@ -245,6 +250,12 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
+
+.board-index-create:hover {
+  background: #9da0a0;
+  color: rgb(100, 112, 163);
+}
+
 
 .board-index-item {
     margin-top: 10px;

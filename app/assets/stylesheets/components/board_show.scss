@@ -32,7 +32,7 @@
   text-decoration: underline;
   margin-left: 15px;
   margin-top: 10px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgb(6, 67, 102);
 }
@@ -43,7 +43,7 @@
   text-align: center;
   margin-left: 17px;
   margin-right: 3px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgb(4, 21, 31);
 }
@@ -63,7 +63,7 @@
   padding-left: 4px;
   height: 26px;
   width: 180px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   border-radius: 3px;
   color: rgb(13, 13, 14);
   background-color: #f6f6f6;
@@ -71,7 +71,7 @@
 
 
 .search-results {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   position: absolute;
   margin-left: 10px;
@@ -84,7 +84,7 @@
 
 
 .board-show-members {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
   margin-top: 8px;
   margin-left: 12px;
@@ -92,12 +92,12 @@
 }
 
 .board-show-members-2 {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   font-size: 20px;
   list-style: none;
   margin-right: 10px;
-  margin-top: 17px;
-  color: rgb(175, 234, 245);
+  margin-top: 16px;
 }
 
 .show {
@@ -131,7 +131,7 @@
   margin-left: 15px;
   margin-top: 9px;
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #1b3335;
   text-decoration: underline; 
   overflow: hidden;
@@ -156,64 +156,55 @@
 
 .board-button-delete {
   float: right;
-  font-size: 19px;
+  font-size: 21px;
   margin-right: 17px;
   margin-top: 12px;
-  border-style: solid;
-  border-width: 2px;
-  background-color: rgb(137, 170, 180);
-  border-radius: 4px;
   padding: 3px 9px;
-  font-family: sans-serif;
-  color: #082233;
-  border-color: #130704;
+  font-family: 'Roboto', sans-serif;
+  color: #7e0606;
   font-weight: bold;
 }
 
 .board-button-delete-1 {
   position: relative;
   float: right;
-  font-size: 19px;
+  font-size: 21px;
   margin-right: 17px;
   margin-top: 12px;
-  border-style: solid;
-  border-width: 2px;
-  background-color: rgb(137, 170, 180);
-  border-radius: 4px;
   padding: 3px 9px;
-  font-family: sans-serif;
-  color: #082233;
-  border-color: #130704;
+  font-family: 'Roboto', sans-serif;
+  color: #7e0606;
   font-weight: bold;
 }
 
 .board-button-delete:hover {
-   background-color: rgb(169, 196, 204);
+  text-decoration: underline;
+  color: #4d0505;;
 }
 
 .board-button-delete-1:hover {
-   background-color: rgb(169, 196, 204);
+  text-decoration: underline;
+  color: #4d0505;;
 }
 
 
 .add-list {
-  font-size: 21px;
+  font-size: 16px;
   margin-left: 28px;
   margin-top: 30px;
   border-style: solid;
-  border-width: 2px;
-  border-color: #7e8485;
-  background-color: rgb(123, 181, 199);
+  border-width: 1px;
+  border-color: #516d77;
+  background-color: #cbd4d2;
   border-radius: 4px;
-  padding: 3px 10px;
-  font-family: sans-serif;
+  padding: 7px 28px;
+  font-family: 'Roboto', sans-serif;
   color: #22123f;
-  border-color: #1b0d0a;
   font-weight: bold;
 }
 
 .add-list:hover {
-  background-color: rgb(169, 196, 204);
+  background-color: #a1aca9;
 }
 
 .board-show-top {
@@ -231,7 +222,7 @@
 
 
 .board-show-list-input {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 30px;
   width: 200px;
   background-color: rgb(168, 194, 187);
@@ -253,7 +244,7 @@
   font-size: 33px;
   margin-left: 10px;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding-top: 5px;
 }
 
@@ -269,7 +260,7 @@
   margin-bottom: 5px;
   color: rgb(7, 8, 92);
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
 
@@ -327,7 +318,7 @@
 .modal-form-card h3 {
    text-align: left;
    padding-left: 14px;
-   font-family: sans-serif;
+   font-family: 'Roboto', sans-serif;
    font-size: 25px;
    margin-bottom: 25px;
    color: rgb(59, 100, 136);
@@ -336,7 +327,7 @@
 .modal-form-card-1 h3 {
    text-align: left;
    padding-left: 14px;
-   font-family: sans-serif;
+   font-family: 'Roboto', sans-serif;
    font-size: 25px;
    margin-bottom: 25px;
    color: rgb(59, 100, 136);
@@ -349,7 +340,7 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: white;
   padding-left: 5px;
 }
@@ -365,7 +356,7 @@
 
 .members-head {
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgb(71, 32, 109);
 }
@@ -388,7 +379,7 @@
 .due-date {
   margin-top: 1%;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   margin-right: 7%;
 }
@@ -397,7 +388,7 @@
   width: 150px;
   display: block;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .description {
@@ -409,7 +400,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -417,7 +408,7 @@
   display: block;
   text-align: left;
   margin-top: 2.5%;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
@@ -443,7 +434,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -452,7 +443,7 @@
   height: 20vh;
   width: 100%;
   background-color: white;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding-left: 5px;
 }
 
@@ -467,7 +458,7 @@
     font-weight: bold;
     margin-right: 5px;
     margin-top: 4%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal-create-card:hover {
@@ -483,7 +474,7 @@
     color: rgb(146, 143, 143);
     font-weight: bold;
     margin-right: 5px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 3%;
 }
 
@@ -496,7 +487,7 @@
   justify-content: right;
   color: rgb(7, 8, 92);
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   border-style: solid;
   border-width: 1px;
@@ -512,7 +503,7 @@
   display: block;
   text-align: left;
   margin-top: 2.5%;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 30px;
   width: 330px;
   padding-left: 5px;
@@ -526,7 +517,7 @@
 .due-date-1 {
   margin-top: 1%;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   width: 90%;
   margin-left: 0%;
@@ -544,13 +535,13 @@
   width: 150px;
   display: block;
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-left: 40%;
 }
 
 .members-head-1 {
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgb(71, 32, 109);
   margin-top: 1%;
@@ -561,7 +552,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -576,7 +567,7 @@
     color: rgb(61, 59, 59);
     font-weight: bold;
     margin-left: 2%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -592,7 +583,7 @@
     color: rgb(1, 12, 1);
     font-weight: bold;
     margin-left: 2%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -612,7 +603,7 @@
     margin-bottom: 5px;
     color: #bb0505;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 
@@ -627,7 +618,7 @@
 
 .card-user {
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-left: 1%;
 }
 
@@ -636,7 +627,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -645,7 +636,7 @@
   display: flex;
   margin-top: 2%;
   font-size: 22px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -658,7 +649,7 @@
   height: 24px;
   margin-top: 2%;
   width: 300px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .checklist-ul {
@@ -673,7 +664,7 @@
 
   li {
      padding-right: 15px;
-     font-family: sans-serif;
+     font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -690,7 +681,7 @@
   border-color: #7e8485;
   background-color: rgb(80, 182, 165);
   border-radius: 4px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #12313f;
   border-color: #411004;
   font-weight: bold;
@@ -706,7 +697,7 @@
   margin-left: 10px;
   color: #bb0505;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
 }
 
@@ -725,7 +716,7 @@
 .due-date-2 {
   margin-top: 1%;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   width: 90%;
   margin-left: 46%;
@@ -742,7 +733,7 @@
     font-weight: bold;
     margin-right: 5px;
     margin-top: 12%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal-create-card-0:hover {
@@ -754,7 +745,7 @@
   display: block;
   text-align: left;
   font-size: 23px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -769,7 +760,7 @@
     font-weight: bold;
     margin-right: 5px;
     margin-top: 5%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal-create-card-2:hover {
@@ -785,7 +776,7 @@
   margin-top: 200%;
   color: #0c506b;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   height: 20px;
 }
@@ -814,6 +805,16 @@
 
 }
 
+.board-button-delete {
+  font-size: 25px;
+  margin-right: 30px;
+  margin-top: 12px;
+  padding: 3px 9px;
+  font-family: 'Roboto', sans-serif;
+  color: #7e0606;
+  font-weight: bold;
+}
+
 .list-index-box {
     margin-left: 60px;
     width: 285px;
@@ -828,12 +829,10 @@
     margin-bottom: 5px;
     color: #07085c;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
  }
 }
-
-
 
 @media only screen and (max-width: 550px) {
 
@@ -860,10 +859,11 @@
     margin-left: 45px;
     margin-top: 10px;
     font-size: 25px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #1b3335;
     text-decoration: underline;
     white-space: nowrap;
+    margin-right: 1px;
 }
 
   .board-index-edit-button {
@@ -871,25 +871,20 @@
     margin-top: 150%;
     color: #0c506b;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     height: 20px;
 }
 
 .board-button-delete {
-    float: right;
-    font-size: 17px;
-    margin-right: 17px;
-    margin-top: 10px;
-    border-style: solid;
-    border-width: 2px;
-    background-color: #89aab4;
-    border-radius: 4px;
-    padding: 3px 3px;
-    font-family: sans-serif;
-    color: #082233;
-    border-color: #130704;
-    font-weight: bold;
+  float: right;
+  font-size: 20px;
+  margin-right: 40px;
+  margin-top: 11px;
+  padding: 3px 9px;
+  font-family: 'Roboto', sans-serif;
+  color: #7e0606;
+  font-weight: bold;
   }
 
   .search-result-item {
@@ -899,7 +894,7 @@
 }
 
 .search-results {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     position: absolute;
     margin-left: 10px;
@@ -921,24 +916,26 @@ form {
 }
 
 .add-list {
-    font-size: 18px;
-    margin-left: 20px;
-    margin-top: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #7e8485;
-    background-color: #7bb5c7;
-    border-radius: 4px;
-    padding: 3px 10px;
-    font-family: sans-serif;
-    color: #22123f;
-    border-color: #1b0d0a;
-    font-weight: bold;
-    width: fit-content;
+  font-size: 16px;
+  margin-left: 22px;
+  margin-top: 18px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #516d77;
+  background-color: #cbd4d2;
+  border-radius: 4px;
+  padding: 6px 24px;
+  font-family: 'Roboto', sans-serif;
+  color: #22123f;
+  font-weight: bold;
+}
+
+.add-list:hover {
+  background-color: #a1aca9;
 }
 
 .board-show-list-input {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     height: 30px;
     width: 180px;
     background-color: #a8c2bb;
@@ -962,9 +959,40 @@ form {
     margin-bottom: 5px;
     color: #07085c;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
  }
+
+ .collaborators-1 {
+    position: relative;
+    display: block;
+    top: 40px;
+    left: 35%;
+  }
+
+  .board-show-members-2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 16px;
+    position: relative;
+    display: block;
+    top: 70px;
+    left: 2%;
+  }
+
+  .board-button-delete-1 {
+    position: static;
+    font-size: 21px;
+    margin-right: 30px;
+    margin-top: 12px;
+    padding: 3px 9px;
+    font-family: 'Roboto', sans-serif;
+    color: #7e0606;
+    font-weight: bold;
+  }
 }
 
 

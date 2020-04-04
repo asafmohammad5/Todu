@@ -120,7 +120,7 @@ class BoardShow extends React.Component {
               <div className="board-show-top"> 
               <div className="board-show-return" onClick={() => this.props.history.push("/boards")}>&#60;</div>
               <h2 className="board-show-heading">{this.props.board.project_name}</h2>
-                <h2 className="collaborators-1">Members</h2>
+                <h2 className="collaborators-1">Members:</h2>
                 <div className="search-result-item">
                   <div className="board-show-users-1">{usersUl}</div>
                 </div>

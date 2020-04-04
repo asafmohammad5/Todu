@@ -150,7 +150,7 @@
 
 @media only screen and (min-width: 2200px) { 
    .session-button {
-    width: 200px;
+    width: 340px;
     height: 24px;
     background: #5AAC44;
     padding: 8px 40px;
@@ -159,10 +159,38 @@
     color: white;
     font-weight: bold;
     margin-right: 5px;
-    margin-top: 12px;
+    margin-top: 35px;
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
  }
+
+ .login-form-form {
+    display: inline-block;
+    width: 20vw;
+    height: 49vh;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    padding: 0px 10px;
+    margin-bottom: 7px;
+    padding-top: 10px;
+    margin-top: 2%;
+  }
+
+  .login-input {
+    margin-bottom: 40px;
+  }
+
+  .login-form {
+    margin-top: 25px;
+  }
+
+  .session-div {
+    margin-top: 30px;
+  }
+
+  .session-demo {
+    margin-top: 50px;
+  }
 }
 
 
@@ -180,13 +208,12 @@
     width: 100px;
     height: 21px;
     background: #5AAC44;
-    padding: 8px 38px;
+    padding: 5px 38px;
     text-align: center;
     border-radius: 8px;
     color: white;
     font-weight: bold;
     margin-right: 5px;
-    margin-top: 12px;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
 }
@@ -201,6 +228,18 @@
     padding: 0px 10px;
     margin-bottom: 7px;
     padding-top: 10px;
-    margin-top: 3%;
+    margin-top: 5%;
+  }
+
+  .session-demo {
+    margin-top: 0%;
+  }
+
+  .session-div {
+    margin-bottom: -10px;
+  }
+
+  .login-input {
+    margin-bottom: 18px;
   }
 }
