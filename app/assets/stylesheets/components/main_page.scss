@@ -81,7 +81,6 @@ div .login-signup {
     text-align: center;
     border-radius: 5px;
     color: rgb(13, 154, 189);
-    // font-weight: bold;
     margin-right: 15px;
     margin-top: 12px;
     font-family: 'Roboto', sans-serif;
@@ -91,20 +90,13 @@ div .login-signup {
   display: block;
     width: 100px;
     height: 17px;
-    // background: rgb(13, 154, 189);
-    // padding: 10px;
     padding-top: 8px;
     text-align: center;
     border-radius: 5px;
     color: white;
-    // font-weight: bold;
     margin-top: 12px;
     font-family: 'Roboto', sans-serif;
 }
-
-// .auth-link:hover {
-//   background: rgb(232, 235, 235);
-// }
 
 .auth-link-1:hover {
   text-decoration: underline;
@@ -176,8 +168,7 @@ div .login-signup {
     text-align: center;
     border-radius: 8px;
     color: white;
-    // font-weight: bold;
-    margin-left: 240px;
+    margin-left: 25%;
     margin-top: 7%;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -198,10 +189,11 @@ div .login-signup {
 }
 
 .p2 {
+  margin-top: 2%;
   font-size: 21px;
   color: rgb(255, 255, 255);
   margin-left: 12%;
-  line-height: 50px;
+  line-height: 35px;
   font-family: 'Roboto', sans-serif;
   width: 60%;
 }
@@ -331,7 +323,6 @@ div .login-signup {
     width: 100vw;
     height: 8vh;
     display: flex;
-    //  
 }
 
  .greet-div-1 {

@@ -4,7 +4,6 @@ class Api::ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     @list.board_id = params[:board_id]
-
     if @list.save 
      @board = Board.find(params[:board_id])
      render :show 
